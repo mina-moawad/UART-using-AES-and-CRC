@@ -1,3 +1,0 @@
-This file includes 2 RTL Verilog files 
-1st file is the top module "AES_mix_columns" where the mix columns Transformation  is fully done by instantiating anothe sub module called mix_single_column
-2nd file is "mix_single_column " where is the Galios field multiplication is preformed under there polynomials according to the fixed matrix that we are having 
