@@ -29,4 +29,14 @@ module AES_Shift_Row #(
 	wire [7:0] s23 = data_in[15:8];
 	wire [7:0] s33 = data_in[7:0];
 
-	
+	//Shifting is done by number of Rows ==> R0 (NO shift), R1 (shift one), R2 (shift two), R3 (Shift three)
+	// NO shift in First Row ==> s00, s01, s02, s03
+	// Shift in Second Row ==>   s11, s12, s13, s10
+	// Shift in Third Row ==>    s22, s23, s20, s21
+	//Shift in Fourth Row =====> s33, s30, s31, s32
+	assign data_out = {s00, s11, s22, s33, 
+					   s01, s12, s23, s30,
+					   s02, s13, s20, s31,
+					   s03, s10, s21, s32 };
+
+	endmodule : AES_Shift_Row
