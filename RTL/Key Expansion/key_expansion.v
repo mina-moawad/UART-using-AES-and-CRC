@@ -1,44 +1,44 @@
 module Key_Expansion(   
-    input   [0:127] key,
+    input   [127:0] key,
     input   [3:0] round,
-    output  [0:127] round_key
+    output  [127:0] round_key // round_key dah hyb2a 1048 bits 
 ) ;
 
 
 
- wire w3 = key[96:127];
- wire w2 = key[64:95] ;
- wire w1 = key[32:63] ;         //WORDS IN
- wire w0 = key[0:31]  ;
+ wire [31:0] w3 = key[127:96];
+ wire [31:0] w2 = key[95:64] ;
+ wire [31:0] w1 = key[63:32] ;         //WORDS IN
+ wire [31:0] w0 = key[31:0]  ;
 
- wire w7 = key[96:127];
- wire w6 = key[64:95] ;
- wire w5 = key[32:63] ;         //WORDS OUT
- wire w4 = key[0:31]  ;
-
-
-wire [0:31] rotated_word ;
-wire [0:31] substituted_word ;
-wire [0:31] Rcon ; 
-wire [0:7] xored_byte_with_Rcon ;
-wire [0:31] substituted_word_after_xor ;
+ wire [31:0] w7;
+ wire [31:0] w6;
+ wire [31:0] w5;         //WORDS OUT
+ wire [31:0] w4;
 
 
+wire [31:0] rotated_word ;
+wire [31:0] substituted_word ;
+wire [31:0] Rcon ; 
+wire [7:0] xored_byte_with_Rcon ;
+wire [31:0] substituted_word_after_xor ;
 
 
-function  automatic [0:31] Rot_Word(
-    input [0:31] orig_word
+
+
+function  automatic [31:0] Rot_Word(
+    input [31:0] orig_word
 );
-Rot_Word = {orig_word[8:31], orig_word[0:7]};
+Rot_Word = {orig_word[7:0], orig_word[31:8]};
 endfunction
 
 assign rotated_word = Rot_Word(w3);
 
 
-S_box s_box1(rotated_word[0:7] ,  substituted_word[0:7] ) ;
-S_box s_box2(rotated_word[8:15] ,  substituted_word[8:15] ) ;
-S_box s_box3(rotated_word[16:23] ,  substituted_word[16:23] ) ;  //module S_box to be created
-S_box s_box4(rotated_word[24:31] ,  substituted_word[24:31] ) ;
+S_box s_box1(rotated_word[7:0] ,  substituted_word[7:0] ) ;
+S_box s_box2(rotated_word[15:8] ,  substituted_word[15:8] ) ;
+S_box s_box3(rotated_word[23:16] ,  substituted_word[23:16] ) ;  //module S_box to be created
+S_box s_box4(rotated_word[31:24] ,  substituted_word[31:24] ) ;
 
 
 
@@ -65,8 +65,8 @@ function [7:0] get_Rcon;
     endfunction
 
 
-assign xored_byte_with_Rcon = substituted_word [0:7] ^ get_Rcon(round) ;
-assign substituted_word_after_xor = {xored_byte_with_Rcon , substituted_word[8:31]} ;
+assign xored_byte_with_Rcon = substituted_word [7:0] ^ get_Rcon(round) ;
+assign substituted_word_after_xor = {xored_byte_with_Rcon , substituted_word[31:8]} ;
 
 
 assign w4 = w0 ^ substituted_word_after_xor;
