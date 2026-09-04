@@ -1,0 +1,202 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+!s11f vlog 2021.1 2021.01, Jan 19 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/questasim64_2021.1/examples
+T_opt
+!s110 1788491329
+V7OZ]CaO[B<ZY_ZC]hQL<Z1
+04 5 4 work tb_RX fast 0
+=1-f430b9544e86-6a9a3640-223-4ec4
+!s124 OEM100
+o-quiet -auto_acc_if_foreign -work work +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2021.1;73
+vEdge_Detection
+Z2 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z3 !s110 1788491321
+!i10b 1
+!s100 04egf;bai^F=XiW=Z4Z>>3
+I3:zk<VRG9B?1OAhbaRA[Y2
+S1
+Z4 dC:/Users/hp/Desktop/NTI_Mateials/UART/UART_RX
+w1788488991
+8Edge_Detection.sv
+FEdge_Detection.sv
+!i122 84
+L0 1 20
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+Z6 OL;L;2021.1;73
+r1
+!s85 0
+31
+Z7 !s108 1788491320.000000
+Z8 !s107 tb_RX.sv|TOP_rx.sv|rx_fsm.sv|rx_baud_counter.sv|SIPO.sv|Edge_Detection.sv|
+Z9 !s90 -reportprogress|300|Edge_Detection.sv|SIPO.sv|rx_baud_counter.sv|rx_fsm.sv|TOP_rx.sv|tb_RX.sv|+cover|-covercells|
+!i113 0
+Z10 !s102 +cover -covercells
+Z11 o+cover -covercells -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+n@edge_@detection
+vrx_baud_counter
+R2
+R3
+!i10b 1
+!s100 ^4gX?HA<5gGU^n2cI1_^K0
+I`GNZf78Wl^HM]PEZA8C[Y3
+S1
+R4
+w1788490968
+8rx_baud_counter.sv
+Frx_baud_counter.sv
+!i122 84
+L0 1 47
+R5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R11
+R1
+vrx_fsm
+R2
+R3
+!i10b 1
+!s100 h6PB<1WoJG:8haC@EX_F:1
+IQm`kPImlKo<2dRi6>UPXd1
+S1
+R4
+w1788491314
+8rx_fsm.sv
+Frx_fsm.sv
+!i122 84
+L0 1 162
+R5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R11
+R1
+vSIPO
+R2
+R3
+!i10b 1
+!s100 D2^RF7SzZn:WkAUm;Y^zo0
+ID3CUO=35?B=F=zT=EbnKh2
+S1
+R4
+w1788486971
+8SIPO.sv
+FSIPO.sv
+!i122 84
+L0 1 16
+R5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R11
+R1
+n@s@i@p@o
+vtb_RX
+R2
+R3
+!i10b 1
+!s100 d5DM_`UlN>;fRLRRQDj:R3
+I3FnzoDhe[UQ_8I42=QZcf3
+S1
+R4
+w1788489844
+8tb_RX.sv
+Ftb_RX.sv
+!i122 84
+L0 1 61
+R5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R11
+R1
+ntb_@r@x
+vTOP_rx
+R2
+R3
+!i10b 1
+!s100 E4j3TLNFRWHIi=W8e?j6l1
+IG]Qa1;DSij6E:bl3k2GR20
+S1
+R4
+w1788489608
+8TOP_rx.sv
+FTOP_rx.sv
+!i122 84
+L0 1 13
+R5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R11
+R1
+n@t@o@p_rx

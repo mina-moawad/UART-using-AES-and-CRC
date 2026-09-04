@@ -1,0 +1,29 @@
+C:/Users/hp/Desktop/NTI_Mateials/UART/UART_RX/TOP_rx.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/hp/Desktop/NTI_Mateials/UART/UART_RX/TOP_rx.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module TOP_rx
+
+Top level modules:
+	TOP_rx
+
+} {} {}} C:/Users/hp/Desktop/NTI_Mateials/UART/UART_RX/tb_RX.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/hp/Desktop/NTI_Mateials/UART/UART_RX/tb_RX.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module tb_RX
+
+Top level modules:
+	tb_RX
+
+} {} {}} C:/Users/hp/Desktop/NTI_Mateials/UART/UART_RX/SIPO.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/hp/Desktop/NTI_Mateials/UART/UART_RX/SIPO.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module SIPO
+
+Top level modules:
+	SIPO
+
+} {} {}} C:/Users/hp/Desktop/NTI_Mateials/UART/UART_RX/Edge_Detection.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/hp/Desktop/NTI_Mateials/UART/UART_RX/Edge_Detection.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module Edge_Detection
+
+Top level modules:
+	Edge_Detection
+
+} {} {}}
