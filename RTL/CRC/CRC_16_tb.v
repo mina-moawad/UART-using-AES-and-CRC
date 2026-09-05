@@ -18,12 +18,13 @@ module CRC_tb;
 
     wire [DATA_WIDTH+CRC_WIDTH-1:0] data_with_crc;
     wire                             done;
+    wire busy ;
 
     // -----------------------------------------
     // DUT
     // -----------------------------------------
 
-    CRC #(
+    CRC2 #(
         .DATA_WIDTH(DATA_WIDTH),
         .CRC_WIDTH(CRC_WIDTH),
         .POLYNOMIAL(4'b1011)
@@ -33,7 +34,8 @@ module CRC_tb;
         .clk(clk),
         .rst_n(rst_n),
         .data_with_crc(data_with_crc),
-        .done(done)
+        .done(done) , 
+        .busy(busy)
         );
 
 
@@ -66,11 +68,12 @@ module CRC_tb;
         // =====================================
 
         data_in = 4'b1001;
-
+        #45 ; 
         // Wait until CRC calculation finishes
-        wait(done);
+        // wait(done);
+        // wait(!busy);
 
-       #2;
+       //#2;
 
         $display("Data = %b | Data + CRC = %b",
                  data_in,
@@ -81,13 +84,14 @@ module CRC_tb;
         // TEST 2
         // =====================================
 
-        #10;
+        //#10;
 
         data_in = 4'b1010;
 
-        wait(done);
-
-        #2;
+        // wait(done);
+        // wait(!busy);
+        //#2;
+        #50 ;
 
         $display("Data = %b | Data + CRC = %b",
                  data_in,
@@ -98,13 +102,13 @@ module CRC_tb;
         // TEST 3
         // =====================================
 
-        #10;
+       // #10;
 
         data_in = 4'b0000;
 
-        wait(done);
+       #50 ;
 
-        #2;
+        //#2;
 
         $display("Data = %b | Data + CRC = %b",
                  data_in,
