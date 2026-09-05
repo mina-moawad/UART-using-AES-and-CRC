@@ -1,140 +1,178 @@
 `timescale 1ns/1ps
+
 module CRC_tb;
 
-    // -----------------------------------------
-    // Parameters
-    // -----------------------------------------
+    parameter DATA_WIDTH = 128;
+    parameter CRC_WIDTH  = 16;
 
-    parameter DATA_WIDTH = 4;
-    parameter CRC_WIDTH  = 3;
-
-    // -----------------------------------------
-    // Testbench signals
-    // -----------------------------------------
-
-    reg [DATA_WIDTH-1:0] data_in;
-    reg                  clk;
-    reg                  rst_n;
+    reg  [DATA_WIDTH-1:0] data_in;
+    reg                   clk;
+    reg                   rst_n;
 
     wire [DATA_WIDTH+CRC_WIDTH-1:0] data_with_crc;
-    wire                             done;
-    wire busy ;
+    wire                            done;
+    wire                            busy;
 
-    // -----------------------------------------
+
+    // ============================================================
     // DUT
-    // -----------------------------------------
+    // ============================================================
 
-    CRC2 #(
-        .DATA_WIDTH(DATA_WIDTH),
-        .CRC_WIDTH(CRC_WIDTH),
-        .POLYNOMIAL(4'b1011)
-    )
-    DUT (
-        .data_in(data_in),
-        .clk(clk),
-        .rst_n(rst_n),
-        .data_with_crc(data_with_crc),
-        .done(done) , 
-        .busy(busy)
-        );
+    CRC #(
+        .DATA_WIDTH (DATA_WIDTH),
+        .CRC_WIDTH  (CRC_WIDTH),
+        .POLYNOMIAL (17'h11021)
+    ) DUT (
+        .data_in       (data_in),
+        .clk           (clk),
+        .rst_n         (rst_n),
+        .data_with_crc (data_with_crc),
+        .done          (done),
+        .busy          (busy)
+    );
 
 
-    // -----------------------------------------
+    // ============================================================
     // Clock
-    // 10 ns period
-    // -----------------------------------------
+    // ============================================================
 
-    always #5 clk = ~clk;
+    initial begin
+        clk = 1'b0;
+        forever #5 clk = ~clk;
+    end
 
 
-    // -----------------------------------------
-    // Test
-    // -----------------------------------------
+    // ============================================================
+    // Test sequence
+    // ============================================================
 
     initial begin
 
-        // Initial values
-        clk    = 1'b0;
-        rst_n  = 1'b0;
-        data_in = 4'b0000;
+        data_in = 128'b0;
+        rst_n   = 1'b0;
 
         // Reset
         #20;
         rst_n = 1'b1;
-        
 
-        // =====================================
+
+        // ========================================================
         // TEST 1
-        // =====================================
+        // ========================================================
 
-        data_in = 4'b1001;
-        #45 ; 
-        // Wait until CRC calculation finishes
-        // wait(done);
-        // wait(!busy);
+        // Wait for any previous operation to finish
+        wait (!busy);
 
-       //#2;
+        // Wait until done is definitely low
+        @(negedge clk);
 
-        $display("Data = %b | Data + CRC = %b",
-                 data_in,
-                 data_with_crc);
+        // Apply test data while module is idle
+        data_in = 128'h31323334353637383941424344454630;
+
+        $display("--------------------------------------------");
+        $display("TEST 1");
+        $display("Input         = %h", data_in);
+        $display("Expected CRC  = 16'h2952");
+        $display("--------------------------------------------");
+
+        // Wait for the module to become busy
+        @(posedge clk);
+
+        // Wait for operation to finish
+        @(posedge done);
+
+        #1;
+
+        if (data_with_crc[15:0] == 16'h2952) begin
+            $display("TEST 1 PASSED");
+            $display("CRC = %h", data_with_crc[15:0]);
+        end
+        else begin
+            $display("TEST 1 FAILED");
+            $display("Expected = 16'h2952");
+            $display("Actual   = %h", data_with_crc[15:0]);
+        end
 
 
-        // =====================================
+        // ========================================================
         // TEST 2
-        // =====================================
+        // ========================================================
 
-        //#10;
+        // Wait until module is idle again
+        wait (!busy);
 
-        data_in = 4'b1010;
+        @(negedge clk);
 
-        // wait(done);
-        // wait(!busy);
-        //#2;
-        #50 ;
+        // Apply second test data
+        data_in = 128'h00112233445566778899AABBCCDDEEFF;
 
-        $display("Data = %b | Data + CRC = %b",
-                 data_in,
-                 data_with_crc);
+        $display("--------------------------------------------");
+        $display("TEST 2");
+        $display("Input         = %h", data_in);
+        $display("Expected CRC  = 16'h1248");
+        $display("--------------------------------------------");
+
+        // Wait for new operation
+        @(posedge clk);
+
+        // Wait for new done pulse
+        @(posedge done);
+
+        #1;
+
+        if (data_with_crc[15:0] == 16'h1248) begin
+            $display("TEST 2 PASSED");
+            $display("CRC = %h", data_with_crc[15:0]);
+        end
+        else begin
+            $display("TEST 2 FAILED");
+            $display("Expected = 16'h1248");
+            $display("Actual   = %h", data_with_crc[15:0]);
+        end
+ //test 3
+         wait (!busy);
+
+        @(negedge clk);
+
+        // Apply second test data
+        data_in = 128'h112233445566778899AABBCCDDEEAA55;
+
+        $display("--------------------------------------------");
+        $display("TEST 3");
+        $display("Input         = %h", data_in);
+        $display("Expected CRC  = 16'h8169");
+        $display("--------------------------------------------");
+
+        // Wait for new operation
+        @(posedge clk);
+
+        // Wait for new done pulse
+        @(posedge done);
+
+        #1;
+
+        if (data_with_crc[15:0] == 16'h8169) begin
+            $display("TEST 3 PASSED");
+            $display("CRC = %h", data_with_crc[15:0]);
+        end
+        else begin
+            $display("TEST 3 FAILED");
+            $display("Expected = 16'h8169");
+            $display("Actual   = %h", data_with_crc[15:0]);
+        end
 
 
-        // =====================================
-        // TEST 3
-        // =====================================
-
-       // #10;
-
-        data_in = 4'b0000;
-
-       #50 ;
-
-        //#2;
-
-        $display("Data = %b | Data + CRC = %b",
-                 data_in,
-                 data_with_crc);
-
+        // ========================================================
+        // End simulation
+        // ========================================================
 
         #20;
 
+        $display("--------------------------------------------");
+        $display("SIMULATION FINISHED");
+        $display("--------------------------------------------");
+
         $finish;
-
-    end
-
-
-    // -----------------------------------------
-    // Monitor
-    // -----------------------------------------
-
-    initial begin
-
-        $monitor("Time=%0t | clk=%b | rst_n=%b | data=%b | CRC_word=%b | done=%b",
-                 $time,
-                 clk,
-                 rst_n,
-                 data_in,
-                 data_with_crc,
-                 done);
 
     end
 
