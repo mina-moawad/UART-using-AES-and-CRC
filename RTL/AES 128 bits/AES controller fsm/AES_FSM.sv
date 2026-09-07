@@ -23,18 +23,6 @@ wire [127:0] round_key_out;
 wire [127:0] add_key_state;
 wire [127:0] add_round_key_out;
 
-// function [127:0] transpose_128;
-//     input [127:0] in;
-//     begin
-//         transpose_128 = {
-//             in[127:120], in[95:88],  in[63:56],  in[31:24],
-//             in[119:112], in[87:80],  in[55:48],  in[23:16],
-//             in[111:104], in[79:72],  in[47:40],  in[15:8],
-//             in[103:96],  in[71:64],  in[39:32],  in[7:0]
-//         };
-//     end
-// endfunction
-
 subBytes Sub_init (state_reg, sub_bytes_out);
 
 AES_Shift_Row SHIFT_ROW (sub_bytes_out, shift_row_out);
