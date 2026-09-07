@@ -1,0 +1,71 @@
+{C:/Users/hp/Desktop/AES/RTL/AES 128 bits/Shift row/AES_Shift_Row.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/hp/Desktop/AES/RTL/AES 128 bits/Shift row/AES_Shift_Row.sv}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module AES_Shift_Row
+
+Top level modules:
+	AES_Shift_Row
+
+} {} {}} {C:/Users/hp/Desktop/AES/RTL/AES 128 bits/S_box and Sub_bytes/sbox.v} {1 {vlog -work work -vopt -stats=none {C:/Users/hp/Desktop/AES/RTL/AES 128 bits/S_box and Sub_bytes/sbox.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module sbox
+
+Top level modules:
+	sbox
+
+} {} {}} {C:/Users/hp/Desktop/AES/RTL/AES 128 bits/S_box and Sub_bytes/subBytes.v} {1 {vlog -work work -vopt -stats=none {C:/Users/hp/Desktop/AES/RTL/AES 128 bits/S_box and Sub_bytes/subBytes.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module subBytes
+
+Top level modules:
+	subBytes
+
+} {} {}} {C:/Users/hp/Desktop/AES/RTL/AES 128 bits/Key Expansion/key_expansion.v} {1 {vlog -work work -vopt -stats=none {C:/Users/hp/Desktop/AES/RTL/AES 128 bits/Key Expansion/key_expansion.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module Key_Expansion
+
+Top level modules:
+	Key_Expansion
+
+} {} {}} {C:/Users/hp/Desktop/AES/RTL/AES 128 bits/AES_mix_column/mix_single_column.v} {1 {vlog -work work -vopt -stats=none {C:/Users/hp/Desktop/AES/RTL/AES 128 bits/AES_mix_column/mix_single_column.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module mix_single_column
+
+Top level modules:
+	mix_single_column
+
+} {} {}} {C:/Users/hp/Desktop/AES/RTL/AES 128 bits/AES controller fsm/AES_FSM.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/hp/Desktop/AES/RTL/AES 128 bits/AES controller fsm/AES_FSM.sv}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module AES_FSM
+
+Top level modules:
+	AES_FSM
+
+} {} {}} {C:/Users/hp/Desktop/AES/RTL/AES 128 bits/AES_mix_column/AES_mix_columns.v} {1 {vlog -work work -vopt -stats=none {C:/Users/hp/Desktop/AES/RTL/AES 128 bits/AES_mix_column/AES_mix_columns.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module AES_mix_columns
+
+Top level modules:
+	AES_mix_columns
+
+} {} {}} {C:/Users/hp/Desktop/AES/RTL/AES 128 bits/Add round Key/Add_Round_Key.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/hp/Desktop/AES/RTL/AES 128 bits/Add round Key/Add_Round_Key.sv}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module Add_Round_Key
+
+Top level modules:
+	Add_Round_Key
+
+} {} {}} C:/Users/hp/Desktop/AES/RTL/CRC/CRC_16.v {1 {vlog -work work -vopt -stats=none C:/Users/hp/Desktop/AES/RTL/CRC/CRC_16.v
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module CRC
+
+Top level modules:
+	CRC
+
+} {} {}} C:/Users/hp/Desktop/AES/RTL/TOP_LEVEL.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/hp/Desktop/AES/RTL/TOP_LEVEL.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module TOP_LEVEL
+
+Top level modules:
+	TOP_LEVEL
+
+} {} {}}

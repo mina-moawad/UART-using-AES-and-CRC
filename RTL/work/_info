@@ -1,0 +1,285 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+!s11f vlog 2021.1 2021.01, Jan 19 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/hp/Desktop/AES/RTL/AES 128 bits
+T_opt
+!s110 1788817242
+V46nT?QeHd:Mk:mn<X91in0
+04 12 4 work tb_TOP_LEVEL fast 0
+=1-f430b9544e86-6a9f2f5a-181-5a4
+!s124 OEM100
+o-quiet -auto_acc_if_foreign -work work +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2021.1;73
+vAdd_Round_Key
+Z2 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z3 !s110 1788817235
+!i10b 1
+!s100 WLOXj`2J6hQ=ZmXFZla<60
+I3P<P>ASkhSRWLIXR[Bh:T3
+S1
+Z4 dC:/Users/hp/Desktop/AES/RTL
+w1787918398
+8./AES 128 bits/Add round Key/Add_Round_Key.sv
+F./AES 128 bits/Add round Key/Add_Round_Key.sv
+!i122 45
+Z5 L0 1 10
+Z6 VDg1SIo80bB@j0V0VzS_@n1
+Z7 OL;L;2021.1;73
+r1
+!s85 0
+31
+Z8 !s108 1788817235.000000
+!s107 ./AES 128 bits/Add round Key/Add_Round_Key.sv|
+!s90 -reportprogress|300|./AES 128 bits/Add round Key/Add_Round_Key.sv|
+!i113 0
+Z9 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+n@add_@round_@key
+vAES_FSM
+R2
+Z10 !s110 1788817236
+!i10b 1
+!s100 R44=LgBdTQmOBJK4KCi`V3
+I@>0O8moAlNDh7E7ZCH^oU1
+S1
+R4
+Z11 w1788780795
+8./AES 128 bits/AES controller fsm/AES_FSM.sv
+F./AES 128 bits/AES controller fsm/AES_FSM.sv
+!i122 50
+L0 1 149
+R6
+R7
+r1
+!s85 0
+31
+Z12 !s108 1788817236.000000
+!s107 ./AES 128 bits/AES controller fsm/AES_FSM.sv|
+!s90 -reportprogress|300|./AES 128 bits/AES controller fsm/AES_FSM.sv|
+!i113 0
+R9
+R1
+n@a@e@s_@f@s@m
+vAES_mix_columns
+R3
+!i10b 1
+!s100 43`I=@R_ilzzJRMHkCZ[83
+IJljYKg4z=?nRz6g9IUaHR1
+R4
+R11
+8./AES 128 bits/AES_mix_column/AES_mix_columns.v
+F./AES 128 bits/AES_mix_column/AES_mix_columns.v
+!i122 46
+R5
+R6
+R7
+r1
+!s85 0
+31
+R8
+Z13 !s107 ./AES 128 bits/AES_mix_column/AES_mix_columns.v|./AES 128 bits/AES_mix_column/mix_single_column.v|
+Z14 !s90 -reportprogress|300|./AES 128 bits/AES_mix_column/mix_single_column.v|./AES 128 bits/AES_mix_column/AES_mix_columns.v|
+!i113 0
+R9
+R1
+n@a@e@s_mix_columns
+vAES_Shift_Row
+R2
+R3
+!i10b 1
+!s100 e1B3e63hiP3T_LWWYh2zc1
+Iz[B2M>oPj2UZ4Lkdz<_SU2
+S1
+R4
+R11
+8./AES 128 bits/Shift row/AES_Shift_Row.sv
+F./AES 128 bits/Shift row/AES_Shift_Row.sv
+!i122 49
+L0 1 43
+R6
+R7
+r1
+!s85 0
+31
+R8
+!s107 ./AES 128 bits/Shift row/AES_Shift_Row.sv|
+!s90 -reportprogress|300|./AES 128 bits/Shift row/AES_Shift_Row.sv|
+!i113 0
+R9
+R1
+n@a@e@s_@shift_@row
+vCRC
+R10
+!i10b 1
+!s100 6^hBj6O6RAL=DRVHSi4<X1
+II1kGoY2MMM@kn^mTJ]XoS2
+R4
+w1788816067
+8./CRC/CRC.v
+F./CRC/CRC.v
+!i122 51
+L0 2 58
+R6
+R7
+r1
+!s85 0
+31
+R12
+!s107 ./CRC/CRC.v|
+!s90 -reportprogress|300|./CRC/CRC.v|
+!i113 0
+R9
+R1
+n@c@r@c
+vKey_Expansion
+R3
+!i10b 1
+!s100 fA2_l_`Eee9a;cbFhA4`@2
+IA95`N`PdBW>Z4=W9KWh<Q0
+R4
+R11
+8./AES 128 bits/Key Expansion/Key_Expansion.v
+F./AES 128 bits/Key Expansion/Key_Expansion.v
+!i122 47
+L0 1 79
+R6
+R7
+r1
+!s85 0
+31
+R8
+!s107 ./AES 128 bits/Key Expansion/Key_Expansion.v|
+!s90 -reportprogress|300|./AES 128 bits/Key Expansion/Key_Expansion.v|
+!i113 0
+R9
+R1
+n@key_@expansion
+vmix_single_column
+R3
+!i10b 1
+!s100 ZJBZ_]<l>D^4>1LeSje_l1
+I=PfhKZFe`VI_HZQU_HzSG3
+R4
+w1787933817
+8./AES 128 bits/AES_mix_column/mix_single_column.v
+F./AES 128 bits/AES_mix_column/mix_single_column.v
+!i122 46
+L0 1 28
+R6
+R7
+r1
+!s85 0
+31
+R8
+R13
+R14
+!i113 0
+R9
+R1
+vsbox
+R3
+!i10b 1
+!s100 86<PXbJT:8<2WZFSGKY?T2
+I:[RYOioZ5>[Q2YMNnFcZ31
+R4
+R11
+8./AES 128 bits/S_box and Sub_Bytes/sbox.v
+F./AES 128 bits/S_box and Sub_Bytes/sbox.v
+!i122 48
+L0 1 269
+R6
+R7
+r1
+!s85 0
+31
+R8
+Z15 !s107 ./AES 128 bits/S_box and Sub_Bytes/subBytes.v|./AES 128 bits/S_box and Sub_Bytes/sbox.v|
+Z16 !s90 -reportprogress|300|./AES 128 bits/S_box and Sub_Bytes/sbox.v|./AES 128 bits/S_box and Sub_Bytes/subBytes.v|
+!i113 0
+R9
+R1
+vsubBytes
+R3
+!i10b 1
+!s100 53REHI8@4JP0e_f6F@b2T1
+I0c2L?c?_Z3O=N7b>=_H@U2
+R4
+R11
+8./AES 128 bits/S_box and Sub_Bytes/subBytes.v
+F./AES 128 bits/S_box and Sub_Bytes/subBytes.v
+!i122 48
+Z17 L0 1 14
+R6
+R7
+r1
+!s85 0
+31
+R8
+R15
+R16
+!i113 0
+R9
+R1
+nsub@bytes
+vtb_TOP_LEVEL
+R2
+R10
+!i10b 1
+!s100 0PjII^a_Q<nLi7=]zm<X`1
+I=gzhj<8<9^edg<4LaBL@03
+S1
+R4
+w1788817195
+8./tb_TOP_LEVEL.sv
+F./tb_TOP_LEVEL.sv
+!i122 53
+L0 1 68
+R6
+R7
+r1
+!s85 0
+31
+R12
+!s107 ./tb_TOP_LEVEL.sv|
+!s90 -reportprogress|300|./tb_TOP_LEVEL.sv|+cover|-covercells|
+!i113 0
+!s102 +cover -covercells
+o+cover -covercells -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+ntb_@t@o@p_@l@e@v@e@l
+vTOP_LEVEL
+R2
+R10
+!i10b 1
+!s100 ei:[<IEKfzNTA7><la8>S3
+ILimTBCDMk3IdWmjFeg2i23
+S1
+R4
+w1788816745
+8./TOP_LEVEL.sv
+F./TOP_LEVEL.sv
+!i122 52
+R17
+R6
+R7
+r1
+!s85 0
+31
+R12
+!s107 ./TOP_LEVEL.sv|
+!s90 -reportprogress|300|./TOP_LEVEL.sv|
+!i113 0
+R9
+R1
+n@t@o@p_@l@e@v@e@l
