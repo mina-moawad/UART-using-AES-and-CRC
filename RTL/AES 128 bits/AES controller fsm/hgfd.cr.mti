@@ -1,0 +1,15 @@
+{C:/Users/hp/Desktop/AES/RTL/AES 128 bits/AES controller fsm/AES_FSM.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/hp/Desktop/AES/RTL/AES 128 bits/AES controller fsm/AES_FSM.sv}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module AES_FSM
+
+Top level modules:
+	AES_FSM
+
+} {} {}} {C:/Users/hp/Desktop/AES/RTL/AES 128 bits/AES controller fsm/tb_AES_FSM.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/hp/Desktop/AES/RTL/AES 128 bits/AES controller fsm/tb_AES_FSM.sv}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module tb_AES_FSM
+
+Top level modules:
+	tb_AES_FSM
+
+} {} {}}

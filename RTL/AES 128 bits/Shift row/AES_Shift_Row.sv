@@ -34,6 +34,7 @@ module AES_Shift_Row #(
 	// Shift in Second Row ==>   s11, s12, s13, s10
 	// Shift in Third Row ==>    s22, s23, s20, s21
 	//Shift in Fourth Row =====> s33, s30, s31, s32
+	
 	assign data_out = {s00, s11, s22, s33, 
 					   s01, s12, s23, s30,
 					   s02, s13, s20, s31,

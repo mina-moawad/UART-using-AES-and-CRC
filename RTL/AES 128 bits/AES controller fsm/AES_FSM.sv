@@ -23,7 +23,19 @@ wire [127:0] round_key_out;
 wire [127:0] add_key_state;
 wire [127:0] add_round_key_out;
 
-Sub_Bytes Sub_init (state_reg, sub_bytes_out);
+// function [127:0] transpose_128;
+//     input [127:0] in;
+//     begin
+//         transpose_128 = {
+//             in[127:120], in[95:88],  in[63:56],  in[31:24],
+//             in[119:112], in[87:80],  in[55:48],  in[23:16],
+//             in[111:104], in[79:72],  in[47:40],  in[15:8],
+//             in[103:96],  in[71:64],  in[39:32],  in[7:0]
+//         };
+//     end
+// endfunction
+
+subBytes Sub_init (state_reg, sub_bytes_out);
 
 AES_Shift_Row SHIFT_ROW (sub_bytes_out, shift_row_out);
 
@@ -33,9 +45,6 @@ Key_Expansion key (key_reg, round_cnt, round_key_out);
 
 assign add_key_state = (cs == AES_FINAL_ROUND)? shift_row_out : mix_col_out;
 
-// // assigning mux for addroundkey inputs
-// wire [127:0] ark_state = (cs == AES_ADD_ROUND_KEY_0) ? plaintext : add_key_state;
-// wire [127:0] ark_key   = (cs == AES_ADD_ROUND_KEY_0) ? master_key : round_key_out;
 
 Add_Round_Key addkey (add_key_state, round_key_out, add_round_key_out);
 //////////////////////////////////////////////////////////////////////////////////////////////////
@@ -67,7 +76,7 @@ always@(*)begin
 			if (round_cnt == 4'b1001) 
 				ns =AES_FINAL_ROUND; 
 			else 
-				ns = AES_IDLE;
+				ns = AES_ROUND_LOOP;
 		end 
 
 		AES_FINAL_ROUND: begin
@@ -95,6 +104,7 @@ always@(posedge clk or negedge rst_n) begin
 		case (cs)
 			AES_IDLE: begin
 				done <= 0; 
+				round_cnt <= 0;
 				if (start)begin
 					state_reg <= plaintext;
 					key_reg <= master_key; 
@@ -102,7 +112,8 @@ always@(posedge clk or negedge rst_n) begin
 			end 
 
 			AES_ADD_ROUND_KEY_0: begin
-				state_reg <= state_reg ^ key_reg;
+				state_reg <= plaintext ^ master_key;
+				key_reg <= master_key;
 				round_cnt <= 1;
 			end 
 
@@ -123,4 +134,28 @@ always@(posedge clk or negedge rst_n) begin
 		endcase
 	end
 end
+
+always @(posedge clk) begin
+        if (cs == AES_ADD_ROUND_KEY_0) begin
+            $display("\n=================== AES ROUND 0 ===================");
+            $display("State After Round 0  : %h", plaintext ^ master_key);
+            $display("Master Key           : %h", master_key);
+        end
+        else if (cs == AES_ROUND_LOOP) begin
+            $display("\n------------------- AES ROUND %0d -------------------", round_cnt);
+            $display("SubBytes Out         : %h", sub_bytes_out);
+            $display("ShiftRows Out        : %h", shift_row_out);
+            $display("MixColumns Out       : %h", mix_col_out);
+            $display("Generated Round Key  : %h", round_key_out);
+            $display("State Out (Next)     : %h", add_round_key_out);
+        end
+        else if (cs == AES_FINAL_ROUND) begin
+            $display("\n=================== FINAL ROUND 10 ===================");
+            $display("SubBytes Out         : %h", sub_bytes_out);
+            $display("ShiftRows Out        : %h", shift_row_out);
+            $display("Final Round Key      : %h", round_key_out);
+            $display("Final Ciphertext     : %h", add_round_key_out);
+            $display("======================================================\n");
+        end
+    end
 endmodule : AES_FSM

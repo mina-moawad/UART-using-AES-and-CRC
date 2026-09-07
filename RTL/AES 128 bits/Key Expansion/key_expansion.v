@@ -35,10 +35,10 @@ endfunction
 assign rotated_word = Rot_Word(w3);
 
 
-S_box s_box1(rotated_word[7:0] ,  substituted_word[7:0] ) ;
-S_box s_box2(rotated_word[15:8] ,  substituted_word[15:8] ) ;
-S_box s_box3(rotated_word[23:16] ,  substituted_word[23:16] ) ;  //module S_box to be created
-S_box s_box4(rotated_word[31:24] ,  substituted_word[31:24] ) ;
+sbox s_box1(rotated_word[7:0] ,  substituted_word[7:0] ) ;
+sbox s_box2(rotated_word[15:8] ,  substituted_word[15:8] ) ;
+sbox s_box3(rotated_word[23:16] ,  substituted_word[23:16] ) ;  //module S_box to be created
+sbox s_box4(rotated_word[31:24] ,  substituted_word[31:24] ) ;
 
 
 
