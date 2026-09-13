@@ -1,0 +1,314 @@
+m255
+K4
+z2
+!s99 nomlopt
+!s11f vlog 2021.1 2021.01, Jan 19 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/hp/Desktop/AES/RTL
+T_opt
+!s110 1789144163
+V6`];NVjb_LYbzCP0n4QA^0
+04 11 4 work tb_UART_top fast 0
+=1-f430b9544e86-6aa42c62-338-3130
+!s124 OEM100
+o-quiet -auto_acc_if_foreign -work work +acc
+Z0 tCvgOpt 0
+n@_opt
+OL;O;2021.1;73
+vbaud_counter_generator
+Z1 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z2 !s110 1789144151
+!i10b 1
+!s100 CzMN1kib6Z_B``<Oz8`J90
+If10EnA_h?7<gPn3knYoY^2
+S1
+Z3 dC:/Users/hp/Desktop/AES/RTL/UART
+w1788308272
+8C:/Users/hp/Desktop/AES/RTL/UART/UART_TX/baud_counter_generator.sv
+FC:/Users/hp/Desktop/AES/RTL/UART/UART_TX/baud_counter_generator.sv
+!i122 2
+L0 1 30
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 OL;L;2021.1;73
+r1
+!s85 0
+31
+Z6 !s108 1789144151.000000
+!s107 C:/Users/hp/Desktop/AES/RTL/UART/UART_TX/baud_counter_generator.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/hp/Desktop/AES/RTL/UART/UART_TX/baud_counter_generator.sv|
+!i113 0
+Z7 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R0
+vEdge_Detection
+R1
+Z8 !s110 1789144152
+!i10b 1
+!s100 04egf;bai^F=XiW=Z4Z>>3
+IYz@HAf_0bl=TS8?WQa3kc2
+S1
+R3
+w1788488991
+8C:/Users/hp/Desktop/AES/RTL/UART/UART_RX/Edge_Detection.sv
+FC:/Users/hp/Desktop/AES/RTL/UART/UART_RX/Edge_Detection.sv
+!i122 6
+L0 1 20
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/hp/Desktop/AES/RTL/UART/UART_RX/Edge_Detection.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/hp/Desktop/AES/RTL/UART/UART_RX/Edge_Detection.sv|
+!i113 0
+R7
+R0
+n@edge_@detection
+vrx_baud_counter
+R1
+R8
+!i10b 1
+!s100 ^4gX?HA<5gGU^n2cI1_^K0
+IXH[2_2AmX5b<YbQ_SOK`@3
+S1
+R3
+w1788490968
+8C:/Users/hp/Desktop/AES/RTL/UART/UART_RX/rx_baud_counter.sv
+FC:/Users/hp/Desktop/AES/RTL/UART/UART_RX/rx_baud_counter.sv
+!i122 7
+Z9 L0 1 47
+R4
+R5
+r1
+!s85 0
+31
+Z10 !s108 1789144152.000000
+!s107 C:/Users/hp/Desktop/AES/RTL/UART/UART_RX/rx_baud_counter.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/hp/Desktop/AES/RTL/UART/UART_RX/rx_baud_counter.sv|
+!i113 0
+R7
+R0
+vrx_fsm
+R1
+R8
+!i10b 1
+!s100 h6PB<1WoJG:8haC@EX_F:1
+IQHYONQdHKo`1G]D?oYBA02
+S1
+R3
+w1788491314
+8C:/Users/hp/Desktop/AES/RTL/UART/UART_RX/rx_fsm.sv
+FC:/Users/hp/Desktop/AES/RTL/UART/UART_RX/rx_fsm.sv
+!i122 8
+L0 1 162
+R4
+R5
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/hp/Desktop/AES/RTL/UART/UART_RX/rx_fsm.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/hp/Desktop/AES/RTL/UART/UART_RX/rx_fsm.sv|
+!i113 0
+R7
+R0
+vSIPO
+R1
+R8
+!i10b 1
+!s100 D2^RF7SzZn:WkAUm;Y^zo0
+I^_XXIDeP@OnHjLddIBZ?N0
+S1
+R3
+w1788486971
+8C:/Users/hp/Desktop/AES/RTL/UART/UART_RX/SIPO.sv
+FC:/Users/hp/Desktop/AES/RTL/UART/UART_RX/SIPO.sv
+!i122 9
+L0 1 16
+R4
+R5
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/hp/Desktop/AES/RTL/UART/UART_RX/SIPO.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/hp/Desktop/AES/RTL/UART/UART_RX/SIPO.sv|
+!i113 0
+R7
+R0
+n@s@i@p@o
+vtb_RX
+R1
+R8
+!i10b 1
+!s100 d5DM_`UlN>;fRLRRQDj:R3
+I6jGoFOi]l<V6EP]UoL>nc2
+S1
+R3
+w1788489844
+8C:/Users/hp/Desktop/AES/RTL/UART/UART_RX/tb_RX.sv
+FC:/Users/hp/Desktop/AES/RTL/UART/UART_RX/tb_RX.sv
+!i122 10
+L0 1 61
+R4
+R5
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/hp/Desktop/AES/RTL/UART/UART_RX/tb_RX.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/hp/Desktop/AES/RTL/UART/UART_RX/tb_RX.sv|
+!i113 0
+R7
+R0
+ntb_@r@x
+vtb_UART_top
+R2
+!i10b 1
+!s100 <[eDYPUEi0n@SZY^n[MYe0
+IBR[F4Eb8cimF3zKmM]zb]2
+R3
+Z11 w1788817603
+8C:/Users/hp/Desktop/AES/RTL/UART/tb_UART_top.v
+FC:/Users/hp/Desktop/AES/RTL/UART/tb_UART_top.v
+!i122 0
+L0 3 90
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/hp/Desktop/AES/RTL/UART/tb_UART_top.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/hp/Desktop/AES/RTL/UART/tb_UART_top.v|
+!i113 0
+Z12 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R0
+ntb_@u@a@r@t_top
+vtb_UART_TX
+R1
+R2
+!i10b 1
+!s100 oj^0Q>GXa3Ia45W?IdEP12
+IQ9UjRdE;DfHczl`ei_;IB0
+S1
+R3
+w1788308882
+8C:/Users/hp/Desktop/AES/RTL/UART/UART_TX/tb_UART_TX.sv
+FC:/Users/hp/Desktop/AES/RTL/UART/UART_TX/tb_UART_TX.sv
+!i122 3
+R9
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/hp/Desktop/AES/RTL/UART/UART_TX/tb_UART_TX.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/hp/Desktop/AES/RTL/UART/UART_TX/tb_UART_TX.sv|
+!i113 0
+R7
+R0
+ntb_@u@a@r@t_@t@x
+vTOP_rx
+R1
+R8
+!i10b 1
+!s100 E4j3TLNFRWHIi=W8e?j6l1
+I>2Q2ZCVDz==1IInmYN9PQ1
+S1
+R3
+w1788489608
+8C:/Users/hp/Desktop/AES/RTL/UART/UART_RX/TOP_rx.sv
+FC:/Users/hp/Desktop/AES/RTL/UART/UART_RX/TOP_rx.sv
+!i122 11
+L0 1 13
+R4
+R5
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/hp/Desktop/AES/RTL/UART/UART_RX/TOP_rx.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/hp/Desktop/AES/RTL/UART/UART_RX/TOP_rx.sv|
+!i113 0
+R7
+R0
+n@t@o@p_rx
+vTOP_UART_TX
+R1
+R2
+!i10b 1
+!s100 KOXX9;^JgUni7h?ahKkkn2
+I1a6C:BDYUgYRaDDP7MhJd0
+S1
+R3
+w1788307384
+8C:/Users/hp/Desktop/AES/RTL/UART/UART_TX/TOP_UART_TX.sv
+FC:/Users/hp/Desktop/AES/RTL/UART/UART_TX/TOP_UART_TX.sv
+!i122 4
+L0 1 12
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/hp/Desktop/AES/RTL/UART/UART_TX/TOP_UART_TX.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/hp/Desktop/AES/RTL/UART/UART_TX/TOP_UART_TX.sv|
+!i113 0
+R7
+R0
+n@t@o@p_@u@a@r@t_@t@x
+vtx_controller
+R1
+R2
+!i10b 1
+!s100 NV`6G;zQ8i9z6;aDc]ZUN1
+IkP9B]hD@F3BI@I;z344Z[3
+S1
+R3
+w1788305470
+8C:/Users/hp/Desktop/AES/RTL/UART/UART_TX/tx_controller.sv
+FC:/Users/hp/Desktop/AES/RTL/UART/UART_TX/tx_controller.sv
+!i122 5
+L0 1 68
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/hp/Desktop/AES/RTL/UART/UART_TX/tx_controller.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/hp/Desktop/AES/RTL/UART/UART_TX/tx_controller.sv|
+!i113 0
+R7
+R0
+vUART_top
+R2
+!i10b 1
+!s100 9RH2>F0>3QgS2kX@S?0;[1
+Ic;Ien94AZAi5PefSTbhQg0
+R3
+R11
+8C:/Users/hp/Desktop/AES/RTL/UART/UART_top.v
+FC:/Users/hp/Desktop/AES/RTL/UART/UART_top.v
+!i122 1
+L0 1 48
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/hp/Desktop/AES/RTL/UART/UART_top.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/hp/Desktop/AES/RTL/UART/UART_top.v|
+!i113 0
+R12
+R0
+n@u@a@r@t_top

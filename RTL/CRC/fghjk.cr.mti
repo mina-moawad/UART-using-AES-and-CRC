@@ -1,0 +1,15 @@
+C:/Users/hp/Desktop/AES/RTL/CRC/CRC_16_tb.v {1 {vlog -work work -vopt -stats=none C:/Users/hp/Desktop/AES/RTL/CRC/CRC_16_tb.v
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module CRC_tb
+
+Top level modules:
+	CRC_tb
+
+} {} {}} C:/Users/hp/Desktop/AES/RTL/CRC/CRC.v {1 {vlog -work work -vopt -stats=none C:/Users/hp/Desktop/AES/RTL/CRC/CRC.v
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module CRC
+
+Top level modules:
+	CRC
+
+} {} {}}
