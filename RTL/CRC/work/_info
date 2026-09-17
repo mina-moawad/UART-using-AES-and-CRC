@@ -1,69 +1,54 @@
 m255
 K4
 z2
-!s99 nomlopt
-!s11f vlog 2021.1 2021.01, Jan 19 2021
 13
 !s112 1.1
 !i10d 8192
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/hp/Desktop/AES/RTL/UART
-T_opt
-!s110 1789194574
-Vz20UD>A>GBzCSbD2OH3MG3
-04 6 4 work CRC_tb fast 0
-=1-f430b9544e86-6aa4f14d-3e7-1458
-!s124 OEM100
-o-quiet -auto_acc_if_foreign -work work +acc
-Z1 tCvgOpt 0
-n@_opt
-OL;O;2021.1;73
-R0
+dC:/intelFPGA/18.1
 vCRC
-!s110 1789292651
+!s110 1789673152
 !i10b 1
-!s100 6^hBj6O6RAL=DRVHSi4<X1
-IAG:gTzPXU[Mm`CD@iUYPX2
-Z2 dC:/Users/hp/Desktop/AES/RTL/CRC
-w1788816067
-8C:/Users/hp/Desktop/AES/RTL/CRC/CRC.v
-FC:/Users/hp/Desktop/AES/RTL/CRC/CRC.v
-!i122 4
-L0 2 58
-Z3 VDg1SIo80bB@j0V0VzS_@n1
-Z4 OL;L;2021.1;73
+!s100 >n[BZ0R5=Qa;Tc`V745j]2
+IH:C6BXJ97>mo^d7_G=b=32
+Z0 VDg1SIo80bB@j0V0VzS_@n1
+Z1 dC:/NTI 4-Months/UART-AES-project/CRC_Try
+w1789672964
+8C:/NTI 4-Months/UART-AES-project/CRC_Try/my_crc.v
+FC:/NTI 4-Months/UART-AES-project/CRC_Try/my_crc.v
+L0 2
+Z2 OV;L;10.5b;63
 r1
 !s85 0
 31
-!s108 1789292651.000000
-!s107 C:/Users/hp/Desktop/AES/RTL/CRC/CRC.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/hp/Desktop/AES/RTL/CRC/CRC.v|
-!i113 0
-Z5 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-R1
+!s108 1789673152.000000
+!s107 C:/NTI 4-Months/UART-AES-project/CRC_Try/my_crc.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/NTI 4-Months/UART-AES-project/CRC_Try/my_crc.v|
+!i113 1
+Z3 o-work work
+Z4 tCvgOpt 0
 n@c@r@c
-vCRC_tb
-!s110 1789292652
+vCRC_tb_
+!s110 1789674858
 !i10b 1
-!s100 ?JcFD9YRmjgi6=`0n5HF<0
-IA46d@mQnOjDccD8HE?jDB0
+!s100 AS?Zc2bSPn>>LDhk:06_[2
+IF5B<PdFe8Pnk@?RRS76Nf2
+R0
+R1
+w1789674835
+8C:/NTI 4-Months/UART-AES-project/CRC_Try/my_crc._tb.v
+FC:/NTI 4-Months/UART-AES-project/CRC_Try/my_crc._tb.v
+L0 3
 R2
-w1788680747
-8C:/Users/hp/Desktop/AES/RTL/CRC/CRC_16_tb.v
-FC:/Users/hp/Desktop/AES/RTL/CRC/CRC_16_tb.v
-!i122 5
-L0 3 177
+r1
+!s85 0
+31
+!s108 1789674858.000000
+!s107 C:/NTI 4-Months/UART-AES-project/CRC_Try/my_crc._tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/NTI 4-Months/UART-AES-project/CRC_Try/my_crc._tb.v|
+!i113 1
 R3
 R4
-r1
-!s85 0
-31
-!s108 1789292652.000000
-!s107 C:/Users/hp/Desktop/AES/RTL/CRC/CRC_16_tb.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/hp/Desktop/AES/RTL/CRC/CRC_16_tb.v|
-!i113 0
-R5
-R1
-n@c@r@c_tb
+n@c@r@c_tb_
