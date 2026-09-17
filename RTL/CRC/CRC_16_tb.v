@@ -1,6 +1,6 @@
 `timescale 1ns/1ps
 
-module CRC_tb;
+module CRC_16_tb;
 
     parameter DATA_WIDTH = 128;
     parameter CRC_WIDTH  = 16;
@@ -8,15 +8,11 @@ module CRC_tb;
     reg  [DATA_WIDTH-1:0] data_in;
     reg                   clk;
     reg                   rst_n;
+    reg                   start;
 
     wire [DATA_WIDTH+CRC_WIDTH-1:0] data_with_crc;
     wire                            done;
     wire                            busy;
-
-
-    // ============================================================
-    // DUT
-    // ============================================================
 
     CRC #(
         .DATA_WIDTH (DATA_WIDTH),
@@ -26,15 +22,13 @@ module CRC_tb;
         .data_in       (data_in),
         .clk           (clk),
         .rst_n         (rst_n),
+        .start         (start),
         .data_with_crc (data_with_crc),
         .done          (done),
         .busy          (busy)
     );
 
 
-    // ============================================================
-    // Clock
-    // ============================================================
 
     initial begin
         clk = 1'b0;
@@ -50,24 +44,26 @@ module CRC_tb;
 
         data_in = 128'b0;
         rst_n   = 1'b0;
+        start   = 1'b0;
 
+        // ========================================================
         // Reset
+        // ========================================================
+
         #20;
         rst_n = 1'b1;
 
 
         // ========================================================
-        // TEST 1
+        // TEST 1 - for the standard ASCII string “123456789” 
         // ========================================================
 
-        // Wait for any previous operation to finish
+        // Wait until CRC module is idle
         wait (!busy);
 
-        // Wait until done is definitely low
-        @(negedge clk);
-
         // Apply test data while module is idle
-        data_in = 128'h31323334353637383941424344454630;
+        @(negedge clk);
+        data_in = 128'h00000000000000313233343536373839; // Hex for ASCII "123456789"
 
         $display("--------------------------------------------");
         $display("TEST 1");
@@ -75,15 +71,19 @@ module CRC_tb;
         $display("Expected CRC  = 16'h2952");
         $display("--------------------------------------------");
 
-        // Wait for the module to become busy
-        @(posedge clk);
+        // Generate one-cycle START pulse
+        @(negedge clk);
+        start = 1'b1;
 
-        // Wait for operation to finish
+        @(negedge clk);
+        start = 1'b0;
+
+        // Wait for CRC calculation to finish
         @(posedge done);
 
         #1;
 
-        if (data_with_crc[15:0] == 16'h2952) begin
+        if (data_with_crc[15:0] == 16'h31C3) begin
             $display("TEST 1 PASSED");
             $display("CRC = %h", data_with_crc[15:0]);
         end
@@ -112,10 +112,14 @@ module CRC_tb;
         $display("Expected CRC  = 16'h1248");
         $display("--------------------------------------------");
 
-        // Wait for new operation
-        @(posedge clk);
+        // Generate one-cycle START pulse
+        @(negedge clk);
+        start = 1'b1;
 
-        // Wait for new done pulse
+        @(negedge clk);
+        start = 1'b0;
+
+        // Wait for CRC calculation to finish
         @(posedge done);
 
         #1;
@@ -129,12 +133,18 @@ module CRC_tb;
             $display("Expected = 16'h1248");
             $display("Actual   = %h", data_with_crc[15:0]);
         end
- //test 3
-         wait (!busy);
+
+
+        // ========================================================
+        // TEST 3
+        // ========================================================
+
+        // Wait until module is idle again
+        wait (!busy);
 
         @(negedge clk);
 
-        // Apply second test data
+        // Apply third test data
         data_in = 128'h112233445566778899AABBCCDDEEAA55;
 
         $display("--------------------------------------------");
@@ -143,10 +153,14 @@ module CRC_tb;
         $display("Expected CRC  = 16'h8169");
         $display("--------------------------------------------");
 
-        // Wait for new operation
-        @(posedge clk);
+        // Generate one-cycle START pulse
+        @(negedge clk);
+        start = 1'b1;
 
-        // Wait for new done pulse
+        @(negedge clk);
+        start = 1'b0;
+
+        // Wait for CRC calculation to finish
         @(posedge done);
 
         #1;
