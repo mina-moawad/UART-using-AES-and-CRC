@@ -68,7 +68,7 @@ module CRC_16_tb;
         $display("--------------------------------------------");
         $display("TEST 1");
         $display("Input         = %h", data_in);
-        $display("Expected CRC  = 16'h2952");
+        $display("Expected CRC  = 16'h31C3");
         $display("--------------------------------------------");
 
         // Generate one-cycle START pulse
@@ -89,7 +89,7 @@ module CRC_16_tb;
         end
         else begin
             $display("TEST 1 FAILED");
-            $display("Expected = 16'h2952");
+            $display("Expected = 16'h31C3");
             $display("Actual   = %h", data_with_crc[15:0]);
         end
 
