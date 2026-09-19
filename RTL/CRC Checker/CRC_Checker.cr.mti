@@ -1,0 +1,15 @@
+{C:/NTI 4-Months/UART-AES-project/CRC_Try/CRC_Checker.v} {1 {vlog -work work -stats=none {C:/NTI 4-Months/UART-AES-project/CRC_Try/CRC_Checker.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module CRC_Checker
+
+Top level modules:
+	CRC_Checker
+
+} {} {}} {C:/NTI 4-Months/UART-AES-project/CRC_Try/CRC_Checker_tb.v} {1 {vlog -work work -stats=none {C:/NTI 4-Months/UART-AES-project/CRC_Try/CRC_Checker_tb.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module CRC_Checker_tb
+
+Top level modules:
+	CRC_Checker_tb
+
+} {} {}}
