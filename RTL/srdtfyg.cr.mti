@@ -89,18 +89,18 @@ QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
 Top level modules:
 	tx_controller
 
-} {} {}} C:/Users/hp/Desktop/AES/RTL/UART/UART_TX/baud_counter_generator.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/hp/Desktop/AES/RTL/UART/UART_TX/baud_counter_generator.sv
-QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
--- Compiling module baud_counter_generator
-
-Top level modules:
-	baud_counter_generator
-
 } {} {}} C:/Users/hp/Desktop/AES/RTL/UART/UART_TX/TOP_UART_TX.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/hp/Desktop/AES/RTL/UART/UART_TX/TOP_UART_TX.sv
 QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
 -- Compiling module TOP_UART_TX
 
 Top level modules:
 	TOP_UART_TX
+
+} {} {}} C:/Users/hp/Desktop/AES/RTL/UART/UART_TX/baud_counter_generator.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/hp/Desktop/AES/RTL/UART/UART_TX/baud_counter_generator.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module baud_counter_generator
+
+Top level modules:
+	baud_counter_generator
 
 } {} {}}

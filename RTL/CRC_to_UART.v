@@ -44,7 +44,6 @@ module CRC_to_UART_Serializer #(
             tx_en           <= 1'b0;
             serializer_done <= 1'b0;
         end
-    end
 
             case (state)
                 IDLE: begin
@@ -84,6 +83,6 @@ module CRC_to_UART_Serializer #(
                     state <= IDLE;
                 end
             endcase
-        
+        end 
 
 endmodule

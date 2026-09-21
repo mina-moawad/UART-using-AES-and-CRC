@@ -1,0 +1,15 @@
+C:/Users/hp/Desktop/AES/RTL/tb_CRC_to_UART.v {1 {vlog -work work -vopt -stats=none C:/Users/hp/Desktop/AES/RTL/tb_CRC_to_UART.v
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module tb_CRC_to_UART
+
+Top level modules:
+	tb_CRC_to_UART
+
+} {} {}} C:/Users/hp/Desktop/AES/RTL/CRC_to_UART.v {1 {vlog -work work -vopt -stats=none C:/Users/hp/Desktop/AES/RTL/CRC_to_UART.v
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module CRC_to_UART_Serializer
+
+Top level modules:
+	CRC_to_UART_Serializer
+
+} {} {}}
