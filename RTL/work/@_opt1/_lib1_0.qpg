@@ -33,10 +33,9 @@ R3
 R4
 n@_opt1
 R5
-R1
 vAdd_Round_Key
 Z6 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
-Z7 !s110 1790059928
+Z7 !s110 1789654095
 !i10b 1
 !s100 WLOXj`2J6hQ=ZmXFZla<60
 I3P<P>ASkhSRWLIXR[Bh:T3
@@ -45,43 +44,43 @@ Z8 dC:/Users/hp/Desktop/AES/RTL
 w1787918398
 8./AES 128 bits/Add round Key/Add_Round_Key.sv
 F./AES 128 bits/Add round Key/Add_Round_Key.sv
-!i122 94
+!i122 69
 Z9 L0 1 10
 Z10 VDg1SIo80bB@j0V0VzS_@n1
 Z11 OL;L;2021.1;73
 r1
 !s85 0
 31
-!s108 1790059927.000000
+Z12 !s108 1789654095.000000
 !s107 ./AES 128 bits/Add round Key/Add_Round_Key.sv|
 !s90 -reportprogress|300|./AES 128 bits/Add round Key/Add_Round_Key.sv|
 !i113 0
-Z12 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z13 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R4
 n@add_@round_@key
 vAES_FSM
 R6
-R7
+Z14 !s110 1789654096
 !i10b 1
 !s100 R44=LgBdTQmOBJK4KCi`V3
 I@>0O8moAlNDh7E7ZCH^oU1
 S1
 R8
-Z13 w1788780795
+Z15 w1788780795
 8./AES 128 bits/AES controller fsm/AES_FSM.sv
 F./AES 128 bits/AES controller fsm/AES_FSM.sv
-!i122 99
+!i122 74
 L0 1 149
 R10
 R11
 r1
 !s85 0
 31
-Z14 !s108 1790059928.000000
+R12
 !s107 ./AES 128 bits/AES controller fsm/AES_FSM.sv|
 !s90 -reportprogress|300|./AES 128 bits/AES controller fsm/AES_FSM.sv|
 !i113 0
-R12
+R13
 R4
 n@a@e@s_@f@s@m
 vAES_mix_columns
@@ -90,21 +89,21 @@ R7
 !s100 43`I=@R_ilzzJRMHkCZ[83
 IJljYKg4z=?nRz6g9IUaHR1
 R8
-R13
+R15
 8./AES 128 bits/AES_mix_column/AES_mix_columns.v
 F./AES 128 bits/AES_mix_column/AES_mix_columns.v
-!i122 95
+!i122 70
 R9
 R10
 R11
 r1
 !s85 0
 31
-R14
-Z15 !s107 ./AES 128 bits/AES_mix_column/AES_mix_columns.v|./AES 128 bits/AES_mix_column/mix_single_column.v|
-Z16 !s90 -reportprogress|300|./AES 128 bits/AES_mix_column/mix_single_column.v|./AES 128 bits/AES_mix_column/AES_mix_columns.v|
-!i113 0
 R12
+Z16 !s107 ./AES 128 bits/AES_mix_column/AES_mix_columns.v|./AES 128 bits/AES_mix_column/mix_single_column.v|
+Z17 !s90 -reportprogress|300|./AES 128 bits/AES_mix_column/mix_single_column.v|./AES 128 bits/AES_mix_column/AES_mix_columns.v|
+!i113 0
+R13
 R4
 n@a@e@s_mix_columns
 vAES_Shift_Row
@@ -115,26 +114,26 @@ R7
 Iz[B2M>oPj2UZ4Lkdz<_SU2
 S1
 R8
-R13
+R15
 8./AES 128 bits/Shift row/AES_Shift_Row.sv
 F./AES 128 bits/Shift row/AES_Shift_Row.sv
-!i122 98
+!i122 73
 L0 1 43
 R10
 R11
 r1
 !s85 0
 31
-R14
+R12
 !s107 ./AES 128 bits/Shift row/AES_Shift_Row.sv|
 !s90 -reportprogress|300|./AES 128 bits/Shift row/AES_Shift_Row.sv|
 !i113 0
-R12
+R13
 R4
 n@a@e@s_@shift_@row
 vbaud_counter_generator
 R6
-Z17 !s110 1789654088
+Z18 !s110 1789654088
 !i10b 1
 !s100 CzMN1kib6Z_B``<Oz8`J90
 If10EnA_h?7<gPn3knYoY^2
@@ -150,14 +149,14 @@ R11
 r1
 !s85 0
 31
-Z18 !s108 1789654088.000000
+Z19 !s108 1789654088.000000
 !s107 C:/Users/hp/Desktop/AES/RTL/UART/UART_TX/baud_counter_generator.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/hp/Desktop/AES/RTL/UART/UART_TX/baud_counter_generator.sv|
 !i113 0
-Z19 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z20 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R4
 vCRC
-R7
+R14
 !i10b 1
 !s100 6^hBj6O6RAL=DRVHSi4<X1
 II1kGoY2MMM@kn^mTJ]XoS2
@@ -165,22 +164,22 @@ R8
 w1788816067
 8./CRC/CRC.v
 F./CRC/CRC.v
-!i122 100
+!i122 75
 L0 2 58
 R10
 R11
 r1
 !s85 0
 31
-R14
+Z21 !s108 1789654096.000000
 !s107 ./CRC/CRC.v|
 !s90 -reportprogress|300|./CRC/CRC.v|
 !i113 0
-R12
+R13
 R4
 n@c@r@c
 vCRC_to_UART_Serializer
-Z20 !s110 1790018796
+Z22 !s110 1790018796
 !i10b 1
 !s100 QRlDI4@DK5lQ<mjUQO8140
 I1]lmzMWIlGT`n[0zobg[n3
@@ -195,16 +194,16 @@ R11
 r1
 !s85 0
 31
-Z21 !s108 1790018796.000000
+Z23 !s108 1790018796.000000
 !s107 C:/Users/hp/Desktop/AES/RTL/CRC_to_UART.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/hp/Desktop/AES/RTL/CRC_to_UART.v|
 !i113 0
-Z22 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z24 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R4
 n@c@r@c_to_@u@a@r@t_@serializer
 vEdge_Detection
 R6
-Z23 !s110 1789654089
+Z25 !s110 1789654089
 !i10b 1
 !s100 04egf;bai^F=XiW=Z4Z>>3
 IYz@HAf_0bl=TS8?WQa3kc2
@@ -220,11 +219,11 @@ R11
 r1
 !s85 0
 31
-Z24 !s108 1789654089.000000
+Z26 !s108 1789654089.000000
 !s107 C:/Users/hp/Desktop/AES/RTL/UART/UART_RX/Edge_Detection.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/hp/Desktop/AES/RTL/UART/UART_RX/Edge_Detection.sv|
 !i113 0
-R19
+R20
 R4
 n@edge_@detection
 vKey_Expansion
@@ -233,21 +232,21 @@ R7
 !s100 fA2_l_`Eee9a;cbFhA4`@2
 IA95`N`PdBW>Z4=W9KWh<Q0
 R8
-R13
+R15
 8./AES 128 bits/Key Expansion/Key_Expansion.v
 F./AES 128 bits/Key Expansion/Key_Expansion.v
-!i122 96
+!i122 71
 L0 1 79
 R10
 R11
 r1
 !s85 0
 31
-R14
+R12
 !s107 ./AES 128 bits/Key Expansion/Key_Expansion.v|
 !s90 -reportprogress|300|./AES 128 bits/Key Expansion/Key_Expansion.v|
 !i113 0
-R12
+R13
 R4
 n@key_@expansion
 vmix_single_column
@@ -259,22 +258,22 @@ R8
 w1787933817
 8./AES 128 bits/AES_mix_column/mix_single_column.v
 F./AES 128 bits/AES_mix_column/mix_single_column.v
-!i122 95
+!i122 70
 L0 1 28
 R10
 R11
 r1
 !s85 0
 31
-R14
-R15
-R16
-!i113 0
 R12
+R16
+R17
+!i113 0
+R13
 R4
 vrx_baud_counter
 R6
-R23
+R25
 !i10b 1
 !s100 ^4gX?HA<5gGU^n2cI1_^K0
 IXH[2_2AmX5b<YbQ_SOK`@3
@@ -284,21 +283,21 @@ w1788490968
 8C:/Users/hp/Desktop/AES/RTL/UART/UART_RX/rx_baud_counter.sv
 FC:/Users/hp/Desktop/AES/RTL/UART/UART_RX/rx_baud_counter.sv
 !i122 64
-Z25 L0 1 47
+Z27 L0 1 47
 R10
 R11
 r1
 !s85 0
 31
-R24
+R26
 !s107 C:/Users/hp/Desktop/AES/RTL/UART/UART_RX/rx_baud_counter.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/hp/Desktop/AES/RTL/UART/UART_RX/rx_baud_counter.sv|
 !i113 0
-R19
+R20
 R4
 vrx_fsm
 R6
-R23
+R25
 !i10b 1
 !s100 h6PB<1WoJG:8haC@EX_F:1
 IQHYONQdHKo`1G]D?oYBA02
@@ -314,11 +313,11 @@ R11
 r1
 !s85 0
 31
-R24
+R26
 !s107 C:/Users/hp/Desktop/AES/RTL/UART/UART_RX/rx_fsm.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/hp/Desktop/AES/RTL/UART/UART_RX/rx_fsm.sv|
 !i113 0
-R19
+R20
 R4
 vsbox
 R7
@@ -326,25 +325,25 @@ R7
 !s100 86<PXbJT:8<2WZFSGKY?T2
 I:[RYOioZ5>[Q2YMNnFcZ31
 R8
-R13
+R15
 8./AES 128 bits/S_box and Sub_Bytes/sbox.v
 F./AES 128 bits/S_box and Sub_Bytes/sbox.v
-!i122 97
+!i122 72
 L0 1 269
 R10
 R11
 r1
 !s85 0
 31
-R14
-Z26 !s107 ./AES 128 bits/S_box and Sub_Bytes/subBytes.v|./AES 128 bits/S_box and Sub_Bytes/sbox.v|
-Z27 !s90 -reportprogress|300|./AES 128 bits/S_box and Sub_Bytes/sbox.v|./AES 128 bits/S_box and Sub_Bytes/subBytes.v|
-!i113 0
 R12
+Z28 !s107 ./AES 128 bits/S_box and Sub_Bytes/subBytes.v|./AES 128 bits/S_box and Sub_Bytes/sbox.v|
+Z29 !s90 -reportprogress|300|./AES 128 bits/S_box and Sub_Bytes/sbox.v|./AES 128 bits/S_box and Sub_Bytes/subBytes.v|
+!i113 0
+R13
 R4
 vSIPO
 R6
-R23
+R25
 !i10b 1
 !s100 D2^RF7SzZn:WkAUm;Y^zo0
 I^_XXIDeP@OnHjLddIBZ?N0
@@ -360,11 +359,11 @@ R11
 r1
 !s85 0
 31
-R24
+R26
 !s107 C:/Users/hp/Desktop/AES/RTL/UART/UART_RX/SIPO.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/hp/Desktop/AES/RTL/UART/UART_RX/SIPO.sv|
 !i113 0
-R19
+R20
 R4
 n@s@i@p@o
 vsubBytes
@@ -373,25 +372,25 @@ R7
 !s100 53REHI8@4JP0e_f6F@b2T1
 I0c2L?c?_Z3O=N7b>=_H@U2
 R8
-R13
+R15
 8./AES 128 bits/S_box and Sub_Bytes/subBytes.v
 F./AES 128 bits/S_box and Sub_Bytes/subBytes.v
-!i122 97
-Z28 L0 1 14
+!i122 72
+Z30 L0 1 14
 R10
 R11
 r1
 !s85 0
 31
-R14
-R26
-R27
-!i113 0
 R12
+R28
+R29
+!i113 0
+R13
 R4
 nsub@bytes
 vtb_CRC_to_UART
-R20
+R22
 !i10b 1
 !s100 _c>mNULmGX>zPZhDm:gKY0
 I6gJz>ddG30fAYRJ7_zf9n0
@@ -406,16 +405,16 @@ R11
 r1
 !s85 0
 31
-R21
+R23
 !s107 C:/Users/hp/Desktop/AES/RTL/tb_CRC_to_UART.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/hp/Desktop/AES/RTL/tb_CRC_to_UART.v|
 !i113 0
-R22
+R24
 R4
 ntb_@c@r@c_to_@u@a@r@t
 vtb_RX
 R6
-R23
+R25
 !i10b 1
 !s100 d5DM_`UlN>;fRLRRQDj:R3
 I6jGoFOi]l<V6EP]UoL>nc2
@@ -431,16 +430,16 @@ R11
 r1
 !s85 0
 31
-R24
+R26
 !s107 C:/Users/hp/Desktop/AES/RTL/UART/UART_RX/tb_RX.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/hp/Desktop/AES/RTL/UART/UART_RX/tb_RX.sv|
 !i113 0
-R19
+R20
 R4
 ntb_@r@x
 vtb_TOP_LEVEL
 R6
-!s110 1790059929
+R14
 !i10b 1
 !s100 0PjII^a_Q<nLi7=]zm<X`1
 I=gzhj<8<9^edg<4LaBL@03
@@ -449,165 +448,16 @@ R8
 w1788817195
 8./tb_TOP_LEVEL.sv
 F./tb_TOP_LEVEL.sv
-!i122 102
-Z29 L0 1 68
+!i122 77
+Z31 L0 1 68
 R10
 R11
 r1
 !s85 0
 31
-R14
+R21
 !s107 ./tb_TOP_LEVEL.sv|
 !s90 -reportprogress|300|./tb_TOP_LEVEL.sv|+cover|-covercells|
 !i113 0
 !s102 +cover -covercells
-o+cover -covercells -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-R4
-ntb_@t@o@p_@l@e@v@e@l
-vtb_UART_TX
-R6
-R17
-!i10b 1
-!s100 oj^0Q>GXa3Ia45W?IdEP12
-IQ9UjRdE;DfHczl`ei_;IB0
-S1
-R8
-w1788308882
-8C:/Users/hp/Desktop/AES/RTL/UART/UART_TX/tb_UART_TX.sv
-FC:/Users/hp/Desktop/AES/RTL/UART/UART_TX/tb_UART_TX.sv
-!i122 60
-R25
-R10
-R11
-r1
-!s85 0
-31
-R18
-!s107 C:/Users/hp/Desktop/AES/RTL/UART/UART_TX/tb_UART_TX.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/hp/Desktop/AES/RTL/UART/UART_TX/tb_UART_TX.sv|
-!i113 0
-R19
-R4
-ntb_@u@a@r@t_@t@x
-vTOP_LEVEL
-R6
-R7
-!i10b 1
-!s100 ei:[<IEKfzNTA7><la8>S3
-ILimTBCDMk3IdWmjFeg2i23
-S1
-R8
-w1788816745
-8./TOP_LEVEL.sv
-F./TOP_LEVEL.sv
-!i122 101
-R28
-R10
-R11
-r1
-!s85 0
-31
-R14
-!s107 ./TOP_LEVEL.sv|
-!s90 -reportprogress|300|./TOP_LEVEL.sv|
-!i113 0
-R12
-R4
-n@t@o@p_@l@e@v@e@l
-vTOP_rx
-R6
-!s110 1789654090
-!i10b 1
-!s100 E4j3TLNFRWHIi=W8e?j6l1
-I>2Q2ZCVDz==1IInmYN9PQ1
-S1
-R8
-w1788489608
-8C:/Users/hp/Desktop/AES/RTL/UART/UART_RX/TOP_rx.sv
-FC:/Users/hp/Desktop/AES/RTL/UART/UART_RX/TOP_rx.sv
-!i122 68
-L0 1 13
-R10
-R11
-r1
-!s85 0
-31
-R24
-!s107 C:/Users/hp/Desktop/AES/RTL/UART/UART_RX/TOP_rx.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/hp/Desktop/AES/RTL/UART/UART_RX/TOP_rx.sv|
-!i113 0
-R19
-R4
-n@t@o@p_rx
-vTOP_UART_TX
-R6
-R23
-!i10b 1
-!s100 KOXX9;^JgUni7h?ahKkkn2
-I1a6C:BDYUgYRaDDP7MhJd0
-S1
-R8
-w1788307384
-8C:/Users/hp/Desktop/AES/RTL/UART/UART_TX/TOP_UART_TX.sv
-FC:/Users/hp/Desktop/AES/RTL/UART/UART_TX/TOP_UART_TX.sv
-!i122 61
-L0 1 12
-R10
-R11
-r1
-!s85 0
-31
-R24
-!s107 C:/Users/hp/Desktop/AES/RTL/UART/UART_TX/TOP_UART_TX.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/hp/Desktop/AES/RTL/UART/UART_TX/TOP_UART_TX.sv|
-!i113 0
-R19
-R4
-n@t@o@p_@u@a@r@t_@t@x
-vtx_controller
-R6
-R23
-!i10b 1
-!s100 NV`6G;zQ8i9z6;aDc]ZUN1
-IkP9B]hD@F3BI@I;z344Z[3
-S1
-R8
-w1788305470
-8C:/Users/hp/Desktop/AES/RTL/UART/UART_TX/tx_controller.sv
-FC:/Users/hp/Desktop/AES/RTL/UART/UART_TX/tx_controller.sv
-!i122 62
-R29
-R10
-R11
-r1
-!s85 0
-31
-R24
-!s107 C:/Users/hp/Desktop/AES/RTL/UART/UART_TX/tx_controller.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/hp/Desktop/AES/RTL/UART/UART_TX/tx_controller.sv|
-!i113 0
-R19
-R4
-vUART_top
-R17
-!i10b 1
-!s100 9RH2>F0>3QgS2kX@S?0;[1
-Ic;Ien94AZAi5PefSTbhQg0
-R8
-w1788817603
-8C:/Users/hp/Desktop/AES/RTL/UART/UART_top.v
-FC:/Users/hp/Desktop/AES/RTL/UART/UART_top.v
-!i122 58
-L0 1 48
-R10
-R11
-r1
-!s85 0
-31
-R18
-!s107 C:/Users/hp/Desktop/AES/RTL/UART/UART_top.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/hp/Desktop/AES/RTL/UART/UART_top.v|
-!i113 0
-R22
-R4
-n@u@a@r@t_top
+o+cover -covercells -L mtiAvm -L m
