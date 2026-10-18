@@ -1,4 +1,4 @@
-module TOP_LEVEL #(
+module TOP_LEVEL_v2 #(
     parameter DATA_WIDTH = 128,
     parameter CRC_WIDTH  = 16,
     parameter [CRC_WIDTH:0] POLYNOMIAL = 17'h11021
