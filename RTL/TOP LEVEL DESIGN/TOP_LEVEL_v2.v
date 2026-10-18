@@ -48,9 +48,9 @@ module TOP_LEVEL_v2 #(
         .rst_n      (rst_n),
         .start      (start),
         .plaintext  (plaintext),
-        .master_Key (master_Key),
+        .master_key (master_Key),
         .ciphertext (ciphertext),
-        .done_AES   (done_AES)
+        .done   (done_AES)
     );
 
     CRC #(
@@ -67,7 +67,7 @@ module TOP_LEVEL_v2 #(
         .busy          (busy_crc)
     );
 
-    CRC_to_UART_Serializer #(
+    CRC_to_UART #(
         .PACKET_WIDTH (DATA_WIDTH + CRC_WIDTH),      // 144 bits
         .NUM_BYTES    ((DATA_WIDTH + CRC_WIDTH) / 8) // 18 bytes
     ) u_serializer (

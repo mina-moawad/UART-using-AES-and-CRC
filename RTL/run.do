@@ -15,11 +15,13 @@ vlog "./CRC/CRC.v"
 vlog "./CRC 2 UART SER/CRC_to_UART.v"
 
 # 4. compile UART TX and RX.
-vlog "./UART/UART_RX/Edge_Detection.sv" "./UART/UART_RX/rx_baud_counter.sv" "./UART/UART_RX/rx_fsm.sv" "./UART/UART_RX/SIPO.sv" "./UART/UART_RX/TOP_rx.sv" "./UART/UART_TX/UART_top.v"
+vlog "./UART/UART_RX/Edge_Detection.sv" "./UART/UART_RX/rx_baud_counter.sv" "./UART/UART_RX/rx_fsm.sv" "./UART/UART_RX/SIPO.sv" "./UART/UART_RX/TOP_rx.sv"
+
+vlog "./UART/UART_TX/baud_counter_generator.sv" "./UART/UART_TX/tx_controller.sv" "./UART/UART_TX/TOP_UART_TX.sv" "./UART/UART_top.v"
 
 # 5. Compile Top Module & Testbench
 vlog "./TOP LEVEL DESIGN/TOP_LEVEL_v2.v"
-vlog "./tb_TOP_LEVEL_v2.v" +cover -covercells
+vlog "./TOP LEVEL DESIGN/tb_TOP_LEVEL_v2.v" +cover -covercells
 
 # 6. Simulate Testbench
 vsim -voptargs=+acc work.tb_TOP_LEVEL_v2 -cover

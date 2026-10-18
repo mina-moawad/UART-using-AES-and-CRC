@@ -21,7 +21,7 @@ module tb_TOP_LEVEL_v2();
     wire        packet_ready_rx;
 
   
-    TOP_LEVEL #(
+    TOP_LEVEL_v2 #(
         .DATA_WIDTH(DATA_WIDTH),
         .CRC_WIDTH(CRC_WIDTH)
     ) uut (
@@ -49,7 +49,7 @@ module tb_TOP_LEVEL_v2();
     integer byte_idx = 0;
     always @(posedge clk) begin
         if (uut.done_rx) begin
-            $display("[TIME %0t ns] Receiver: Byte [%0d] received = 0x%h", $time, byte_idx, uut.rx_data_byte);
+            $display("[TIME %0t ns] Receiver: Byte [%0d] received = 0x%h", $time, byte_idx, uut.rx_data);
             byte_idx = byte_idx + 1;
         end
     end
