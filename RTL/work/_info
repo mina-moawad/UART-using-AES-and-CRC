@@ -1,7 +1,8 @@
 m255
 K4
 z2
-!s99 nomlopt
+Z0 !s99 nomlopt
+R0
 !s11f vlog 2021.1 2021.01, Jan 19 2021
 13
 !s112 1.1
@@ -9,504 +10,514 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/hp/OneDrive/Desktop/AES/RTL
+Z1 dC:/Users/hp/OneDrive/Desktop/AES/RTL
+T_opt
+!s110 1792449672
+V5Ei4igLJM^6Gb^ARCPKH;0
+04 14 4 work tb_TOP_LEVELv2 fast 0
+=1-f430b9544e86-6ad69c88-e8-e1c
+!s124 OEM100
+o-quiet -auto_acc_if_foreign -work work +acc
+Z2 tCvgOpt 0
+n@_opt
+OL;O;2021.1;73
 vAdd_Round_Key
-Z1 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
-Z2 !s110 1792449461
+Z3 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z4 !s110 1792449669
 !i10b 1
 !s100 WLOXj`2J6hQ=ZmXFZla<60
 I3P<P>ASkhSRWLIXR[Bh:T3
 S1
-R0
+R1
 w1787918398
 8./AES 128 bits/Add round Key/Add_Round_Key.sv
 F./AES 128 bits/Add round Key/Add_Round_Key.sv
-!i122 0
-Z3 L0 1 10
-Z4 VDg1SIo80bB@j0V0VzS_@n1
-Z5 OL;L;2021.1;73
+!i122 12
+Z5 L0 1 10
+Z6 VDg1SIo80bB@j0V0VzS_@n1
+Z7 OL;L;2021.1;73
 r1
 !s85 0
 31
-Z6 !s108 1792449461.000000
+Z8 !s108 1792449669.000000
 !s107 ./AES 128 bits/Add round Key/Add_Round_Key.sv|
 !s90 -reportprogress|300|./AES 128 bits/Add round Key/Add_Round_Key.sv|
 !i113 0
-Z7 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-Z8 tCvgOpt 0
+Z9 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
 n@add_@round_@key
 vAES_FSM
-R1
-Z9 !s110 1792449463
+R3
+Z10 !s110 1792449670
 !i10b 1
 !s100 R44=LgBdTQmOBJK4KCi`V3
 I@>0O8moAlNDh7E7ZCH^oU1
 S1
-R0
-Z10 w1788780795
+R1
+Z11 w1788780795
 8./AES 128 bits/AES controller fsm/AES_FSM.sv
 F./AES 128 bits/AES controller fsm/AES_FSM.sv
-!i122 5
+!i122 17
 L0 1 149
-R4
-R5
+R6
+R7
 r1
 !s85 0
 31
-Z11 !s108 1792449462.000000
+Z12 !s108 1792449670.000000
 !s107 ./AES 128 bits/AES controller fsm/AES_FSM.sv|
 !s90 -reportprogress|300|./AES 128 bits/AES controller fsm/AES_FSM.sv|
 !i113 0
-R7
-R8
+R9
+R2
 n@a@e@s_@f@s@m
 vAES_mix_columns
-R2
+R4
 !i10b 1
 !s100 43`I=@R_ilzzJRMHkCZ[83
 IJljYKg4z=?nRz6g9IUaHR1
-R0
-R10
+R1
+R11
 8./AES 128 bits/AES_mix_column/AES_mix_columns.v
 F./AES 128 bits/AES_mix_column/AES_mix_columns.v
-!i122 1
-R3
-R4
+!i122 13
 R5
+R6
+R7
 r1
 !s85 0
 31
-R6
-Z12 !s107 ./AES 128 bits/AES_mix_column/AES_mix_columns.v|./AES 128 bits/AES_mix_column/mix_single_column.v|
-Z13 !s90 -reportprogress|300|./AES 128 bits/AES_mix_column/mix_single_column.v|./AES 128 bits/AES_mix_column/AES_mix_columns.v|
-!i113 0
-R7
 R8
+Z13 !s107 ./AES 128 bits/AES_mix_column/AES_mix_columns.v|./AES 128 bits/AES_mix_column/mix_single_column.v|
+Z14 !s90 -reportprogress|300|./AES 128 bits/AES_mix_column/mix_single_column.v|./AES 128 bits/AES_mix_column/AES_mix_columns.v|
+!i113 0
+R9
+R2
 n@a@e@s_mix_columns
 vAES_Shift_Row
-R1
-Z14 !s110 1792449462
+R3
+R4
 !i10b 1
 !s100 e1B3e63hiP3T_LWWYh2zc1
 Iz[B2M>oPj2UZ4Lkdz<_SU2
 S1
-R0
-R10
+R1
+R11
 8./AES 128 bits/Shift row/AES_Shift_Row.sv
 F./AES 128 bits/Shift row/AES_Shift_Row.sv
-!i122 4
+!i122 16
 L0 1 43
-R4
-R5
+R6
+R7
 r1
 !s85 0
 31
-R11
+R8
 !s107 ./AES 128 bits/Shift row/AES_Shift_Row.sv|
 !s90 -reportprogress|300|./AES 128 bits/Shift row/AES_Shift_Row.sv|
 !i113 0
-R7
-R8
+R9
+R2
 n@a@e@s_@shift_@row
 vbaud_counter_generator
-R1
-R9
+R3
+R10
 !i10b 1
 !s100 CzMN1kib6Z_B``<Oz8`J90
 I9JR:5]AV6zZaSE3HDg:oC1
 S1
-R0
+R1
 w1788308272
 8./UART/UART_TX/baud_counter_generator.sv
 F./UART/UART_TX/baud_counter_generator.sv
-!i122 9
+!i122 21
 L0 1 30
-R4
-R5
+R6
+R7
 r1
 !s85 0
 31
-Z15 !s108 1792449463.000000
-Z16 !s107 ./UART/UART_top.v|./UART/UART_TX/TOP_UART_TX.sv|./UART/UART_TX/tx_controller.sv|./UART/UART_TX/baud_counter_generator.sv|
-Z17 !s90 -reportprogress|300|./UART/UART_TX/baud_counter_generator.sv|./UART/UART_TX/tx_controller.sv|./UART/UART_TX/TOP_UART_TX.sv|./UART/UART_top.v|
+R12
+Z15 !s107 ./UART/UART_top.v|./UART/UART_TX/TOP_UART_TX.sv|./UART/UART_TX/tx_controller.sv|./UART/UART_TX/baud_counter_generator.sv|
+Z16 !s90 -reportprogress|300|./UART/UART_TX/baud_counter_generator.sv|./UART/UART_TX/tx_controller.sv|./UART/UART_TX/TOP_UART_TX.sv|./UART/UART_top.v|
 !i113 0
-R7
-R8
-vCRC
 R9
+R2
+vCRC
+R10
 !i10b 1
 !s100 6^hBj6O6RAL=DRVHSi4<X1
 II1kGoY2MMM@kn^mTJ]XoS2
-R0
+R1
 w1788816067
 8./CRC/CRC.v
 F./CRC/CRC.v
-!i122 6
+!i122 18
 L0 2 58
-R4
-R5
+R6
+R7
 r1
 !s85 0
 31
-R15
+R12
 !s107 ./CRC/CRC.v|
 !s90 -reportprogress|300|./CRC/CRC.v|
 !i113 0
-R7
-R8
+R9
+R2
 n@c@r@c
 vCRC_to_UART
-R9
+R10
 !i10b 1
 !s100 LE?XL:=JA^=ZY<E=dCbkS0
 IVSY:6^Be:GZLG:CQWlEY:0
-R0
+R1
 w1791719497
 8./CRC 2 UART SER/CRC_to_UART.v
 F./CRC 2 UART SER/CRC_to_UART.v
-!i122 7
-Z18 L0 1 79
-R4
-R5
+!i122 19
+Z17 L0 1 79
+R6
+R7
 r1
 !s85 0
 31
-R15
+R12
 !s107 ./CRC 2 UART SER/CRC_to_UART.v|
 !s90 -reportprogress|300|./CRC 2 UART SER/CRC_to_UART.v|
 !i113 0
-R7
-R8
+R9
+R2
 n@c@r@c_to_@u@a@r@t
 vEdge_Detection
-R1
-R9
+R3
+R10
 !i10b 1
 !s100 04egf;bai^F=XiW=Z4Z>>3
 IJY=6S1b=NhjZg]TD4XzgK0
 S1
-R0
+R1
 w1788488991
 8./UART/UART_RX/Edge_Detection.sv
 F./UART/UART_RX/Edge_Detection.sv
-!i122 8
+!i122 20
 L0 1 20
-R4
-R5
+R6
+R7
 r1
 !s85 0
 31
-R15
-Z19 !s107 ./UART/UART_RX/TOP_rx.sv|./UART/UART_RX/SIPO.sv|./UART/UART_RX/rx_fsm.sv|./UART/UART_RX/rx_baud_counter.sv|./UART/UART_RX/Edge_Detection.sv|
-Z20 !s90 -reportprogress|300|./UART/UART_RX/Edge_Detection.sv|./UART/UART_RX/rx_baud_counter.sv|./UART/UART_RX/rx_fsm.sv|./UART/UART_RX/SIPO.sv|./UART/UART_RX/TOP_rx.sv|
+R12
+Z18 !s107 ./UART/UART_RX/TOP_rx.sv|./UART/UART_RX/SIPO.sv|./UART/UART_RX/rx_fsm.sv|./UART/UART_RX/rx_baud_counter.sv|./UART/UART_RX/Edge_Detection.sv|
+Z19 !s90 -reportprogress|300|./UART/UART_RX/Edge_Detection.sv|./UART/UART_RX/rx_baud_counter.sv|./UART/UART_RX/rx_fsm.sv|./UART/UART_RX/SIPO.sv|./UART/UART_RX/TOP_rx.sv|
 !i113 0
-R7
-R8
+R9
+R2
 n@edge_@detection
 vKey_Expansion
-R14
+R4
 !i10b 1
 !s100 fA2_l_`Eee9a;cbFhA4`@2
 IA95`N`PdBW>Z4=W9KWh<Q0
-R0
-R10
+R1
+R11
 8./AES 128 bits/Key Expansion/Key_Expansion.v
 F./AES 128 bits/Key Expansion/Key_Expansion.v
-!i122 2
-R18
-R4
-R5
+!i122 14
+R17
+R6
+R7
 r1
 !s85 0
 31
-R11
+R8
 !s107 ./AES 128 bits/Key Expansion/Key_Expansion.v|
 !s90 -reportprogress|300|./AES 128 bits/Key Expansion/Key_Expansion.v|
 !i113 0
-R7
-R8
+R9
+R2
 n@key_@expansion
 vmix_single_column
-R2
+R4
 !i10b 1
 !s100 VAbhJEbYN]YKd^UoN:5<53
 Id]hKAzH8hYOHeB:C?92IJ3
-R0
+R1
 w1792448363
 8./AES 128 bits/AES_mix_column/mix_single_column.v
 F./AES 128 bits/AES_mix_column/mix_single_column.v
-!i122 1
+!i122 13
 L0 1 28
-R4
-R5
+R6
+R7
 r1
 !s85 0
 31
-R6
-R12
-R13
-!i113 0
-R7
 R8
-vrx_baud_counter
-R1
+R13
+R14
+!i113 0
 R9
+R2
+vrx_baud_counter
+R3
+R10
 !i10b 1
 !s100 ^4gX?HA<5gGU^n2cI1_^K0
 IhK6hIB;NIjdWjznmW3@mI2
 S1
-R0
+R1
 w1788490968
 8./UART/UART_RX/rx_baud_counter.sv
 F./UART/UART_RX/rx_baud_counter.sv
-!i122 8
+!i122 20
 L0 1 47
-R4
-R5
+R6
+R7
 r1
 !s85 0
 31
-R15
+R12
+R18
 R19
-R20
 !i113 0
-R7
-R8
-vrx_fsm
-R1
 R9
+R2
+vrx_fsm
+R3
+R10
 !i10b 1
 !s100 h6PB<1WoJG:8haC@EX_F:1
 Infe1JQnB4VIHizWIEel`h0
 S1
-R0
+R1
 w1788491314
 8./UART/UART_RX/rx_fsm.sv
 F./UART/UART_RX/rx_fsm.sv
-!i122 8
+!i122 20
 L0 1 162
-R4
-R5
+R6
+R7
 r1
 !s85 0
 31
-R15
+R12
+R18
 R19
-R20
 !i113 0
-R7
-R8
+R9
+R2
 vsbox
-R14
+R4
 !i10b 1
 !s100 86<PXbJT:8<2WZFSGKY?T2
 I:[RYOioZ5>[Q2YMNnFcZ31
-R0
-R10
+R1
+R11
 8./AES 128 bits/S_box and Sub_Bytes/sbox.v
 F./AES 128 bits/S_box and Sub_Bytes/sbox.v
-!i122 3
+!i122 15
 L0 1 269
-R4
-R5
+R6
+R7
 r1
 !s85 0
 31
-R11
-Z21 !s107 ./AES 128 bits/S_box and Sub_Bytes/subBytes.v|./AES 128 bits/S_box and Sub_Bytes/sbox.v|
-Z22 !s90 -reportprogress|300|./AES 128 bits/S_box and Sub_Bytes/sbox.v|./AES 128 bits/S_box and Sub_Bytes/subBytes.v|
-!i113 0
-R7
 R8
-vSIPO
-R1
+Z20 !s107 ./AES 128 bits/S_box and Sub_Bytes/subBytes.v|./AES 128 bits/S_box and Sub_Bytes/sbox.v|
+Z21 !s90 -reportprogress|300|./AES 128 bits/S_box and Sub_Bytes/sbox.v|./AES 128 bits/S_box and Sub_Bytes/subBytes.v|
+!i113 0
 R9
+R2
+vSIPO
+R3
+R10
 !i10b 1
 !s100 D2^RF7SzZn:WkAUm;Y^zo0
 IHM@<=m@RMBR`]5@7UI]Io1
 S1
-R0
+R1
 w1788486971
 8./UART/UART_RX/SIPO.sv
 F./UART/UART_RX/SIPO.sv
-!i122 8
+!i122 20
 L0 1 16
-R4
-R5
+R6
+R7
 r1
 !s85 0
 31
-R15
+R12
+R18
 R19
-R20
 !i113 0
-R7
-R8
+R9
+R2
 n@s@i@p@o
 vsubBytes
-R14
+R4
 !i10b 1
 !s100 53REHI8@4JP0e_f6F@b2T1
 I0c2L?c?_Z3O=N7b>=_H@U2
-R0
-R10
+R1
+R11
 8./AES 128 bits/S_box and Sub_Bytes/subBytes.v
 F./AES 128 bits/S_box and Sub_Bytes/subBytes.v
-!i122 3
+!i122 15
 L0 1 14
-R4
-R5
+R6
+R7
 r1
 !s85 0
 31
-R11
-R21
-R22
-!i113 0
-R7
 R8
+R20
+R21
+!i113 0
+R9
+R2
 nsub@bytes
 vtb_TOP_LEVELv2
-Z23 !s110 1792449464
+!s110 1792449671
 !i10b 1
 !s100 ToZJXRWzJHFTY_Kn:CSa52
 IdBeDF^NiK:WZd2DJ2Aa0<2
-R0
+R1
 w1792449303
 8./TOP LEVEL DESIGN/tb_TOP_LEVELv2.v
 F./TOP LEVEL DESIGN/tb_TOP_LEVELv2.v
-!i122 11
+!i122 23
 L0 21 113
-R4
-R5
+R6
+R7
 r1
 !s85 0
 31
-Z24 !s108 1792449464.000000
+!s108 1792449671.000000
 !s107 ./TOP LEVEL DESIGN/tb_TOP_LEVELv2.v|
 !s90 -reportprogress|300|./TOP LEVEL DESIGN/tb_TOP_LEVELv2.v|+cover|-covercells|
 !i113 0
 !s102 +cover -covercells
 o+cover -covercells -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-R8
+R2
 ntb_@t@o@p_@l@e@v@e@lv2
 vTOP_LEVEL_v2
-R23
+R10
 !i10b 1
 !s100 ClJfeB<5oTj=Q;VNPh:WR0
 If[7za27e6KSKc[fi3Z]b91
-R0
+R1
 w1792332510
 8./TOP LEVEL DESIGN/TOP_LEVEL_v2.v
 F./TOP LEVEL DESIGN/TOP_LEVEL_v2.v
-!i122 10
+!i122 22
 L0 1 101
-R4
-R5
+R6
+R7
 r1
 !s85 0
 31
-R24
+R12
 !s107 ./TOP LEVEL DESIGN/TOP_LEVEL_v2.v|
 !s90 -reportprogress|300|./TOP LEVEL DESIGN/TOP_LEVEL_v2.v|
 !i113 0
-R7
-R8
+R9
+R2
 n@t@o@p_@l@e@v@e@l_v2
 vTOP_rx
-R1
-R9
+R3
+R10
 !i10b 1
 !s100 E4j3TLNFRWHIi=W8e?j6l1
 I>AUN1fQ;D]K7HiN:c[DBT2
 S1
-R0
+R1
 w1788489608
 8./UART/UART_RX/TOP_rx.sv
 F./UART/UART_RX/TOP_rx.sv
-!i122 8
+!i122 20
 L0 1 13
-R4
-R5
+R6
+R7
 r1
 !s85 0
 31
-R15
+R12
+R18
 R19
-R20
 !i113 0
-R7
-R8
+R9
+R2
 n@t@o@p_rx
 vTOP_UART_TX
-R1
-R9
+R3
+R10
 !i10b 1
 !s100 KOXX9;^JgUni7h?ahKkkn2
 I8jbQ^RkaYTa428f[QNiKM3
 S1
-R0
+R1
 w1788307384
 8./UART/UART_TX/TOP_UART_TX.sv
 F./UART/UART_TX/TOP_UART_TX.sv
-!i122 9
+!i122 21
 L0 1 12
-R4
-R5
+R6
+R7
 r1
 !s85 0
 31
+R12
 R15
 R16
-R17
 !i113 0
-R7
-R8
+R9
+R2
 n@t@o@p_@u@a@r@t_@t@x
 vtx_controller
-R1
-R9
+R3
+R10
 !i10b 1
 !s100 NV`6G;zQ8i9z6;aDc]ZUN1
 I4V4X6Nc6E8lU]^B]3zdmL0
 S1
-R0
+R1
 w1788305470
 8./UART/UART_TX/tx_controller.sv
 F./UART/UART_TX/tx_controller.sv
-!i122 9
+!i122 21
 L0 1 68
-R4
-R5
+R6
+R7
 r1
 !s85 0
 31
+R12
 R15
 R16
-R17
 !i113 0
-R7
-R8
+R9
+R2
 vUART_top
-R23
+R10
 !i10b 1
 !s100 9RH2>F0>3QgS2kX@S?0;[1
 I<P?eT61gAGleI39^UPX2V1
-R0
+R1
 w1788817603
 8./UART/UART_top.v
 F./UART/UART_top.v
-!i122 9
+!i122 21
 L0 1 48
-R4
-R5
+R6
+R7
 r1
 !s85 0
 31
+R12
 R15
 R16
-R17
 !i113 0
-R7
-R8
+R9
+R2
 n@u@a@r@t_top
