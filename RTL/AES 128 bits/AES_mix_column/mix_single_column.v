@@ -20,9 +20,9 @@ module mix_single_column (
     wire [7:0] s3_x3 = s3_x2 ^ s3; // (s3 * 2) XOR (s3 * 1) = s3 * 3
 
     // Direct continuous wire assignments for outputs
-    assign col_out[31:24] = s0_x3 ^ s1_x2 ^ s2    ^ s3;
-    assign col_out[23:16] = s0    ^ s1_x3 ^ s2_x2 ^ s3;
-    assign col_out[15:8]  = s0    ^ s1    ^ s2_x3 ^ s3_x2;
-    assign col_out[7:0]   = s0_x2 ^ s1    ^ s2    ^ s3_x3;
+    assign col_out[31:24] = s0_x2 ^ s1_x3 ^ s2    ^ s3;     // 2*s0 ^ 3*s1 ^ s2   ^ s3
+    assign col_out[23:16] = s0    ^ s1_x2 ^ s2_x3 ^ s3;     // s0   ^ 2*s1 ^ 3*s2 ^ s3
+    assign col_out[15:8]  = s0    ^ s1    ^ s2_x2 ^ s3_x3;  // s0   ^ s1   ^ 2*s2 ^ 3*s3
+    assign col_out[7:0]   = s0_x3 ^ s1    ^ s2    ^ s3_x2;  // 3*s0 ^ s1   ^ s2   ^ 2*s3
 
 endmodule   
