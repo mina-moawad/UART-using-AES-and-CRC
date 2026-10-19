@@ -18,7 +18,7 @@
 //     byte 12 = 19   byte 13 = 6a   byte 14 = 0b   byte 15 = 32
 //     byte 16 = db   byte 17 = 05   (CRC high byte, then low byte)
 //==============================================================================
-module TOP_LEVELv2 ();
+module tb_TOP_LEVELv2 ();
  
     reg          clk;
     reg          rst_n;
@@ -36,7 +36,7 @@ module TOP_LEVELv2 ();
     wire         busy_rx;
     wire         err_rx;
  
-    TOP_LEVEL dut (
+    TOP_LEVEL_v2 dut (
         .clk         (clk),
         .rst_n       (rst_n),
         .start       (start),

@@ -21,14 +21,14 @@ vlog "./UART/UART_TX/baud_counter_generator.sv" "./UART/UART_TX/tx_controller.sv
 
 # 5. Compile Top Module & Testbench
 vlog "./TOP LEVEL DESIGN/TOP_LEVEL_v2.v"
-vlog "./TOP LEVEL DESIGN/tb_TOP_LEVEL_v2.v" +cover -covercells
+vlog "./TOP LEVEL DESIGN/tb_TOP_LEVELv2.v" +cover -covercells
 
 # 6. Simulate Testbench
-vsim -voptargs=+acc work.tb_TOP_LEVEL_v2 -cover
+vsim -voptargs=+acc work.tb_TOP_LEVELv2 -cover
 
 # 7. Add Signals to Waveform
-add wave -position insertpoint sim:/tb_TOP_LEVEL_v2/*
+add wave -position insertpoint sim:/tb_TOP_LEVELv2/*
 
 # 8. Save Coverage & Run
-coverage save tb_TOP_LEVEL_v2.ucdb -onexit
+coverage save tb_TOP_LEVELv2.ucdb -onexit
 run -all
