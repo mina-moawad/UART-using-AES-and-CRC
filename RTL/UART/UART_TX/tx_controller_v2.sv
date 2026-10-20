@@ -79,4 +79,4 @@ module tx_controller_v2 (
 
     end
   end
-endmodule : tx_controller
+endmodule
